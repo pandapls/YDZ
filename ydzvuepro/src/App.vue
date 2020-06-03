@@ -1,16 +1,17 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      
-
-    </div>
+  <div id="app">     
+      <Tabbar></Tabbar>
     <router-view/>
   </div>
 </template>
 <script type="text/javascript">
 	import {obj} from './utils.js'
+	import Tabbar from './components/tabbar.vue'
 	export default {
 	  name: 'App',
+	  components:{
+	  	Tabbar
+	  },
 	  mounted:function(){
 	  	obj.setRem()
 	  }
@@ -29,16 +30,5 @@ body{
 }
 
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

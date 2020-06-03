@@ -1,5 +1,14 @@
 <template>
 	<div>
-		这里是首页Home
+		<Search></Search>
 	</div>
 </template>
+<script>
+	import Search from '../../components/search.vue'
+	export default{
+		name:"home",
+		components:{
+			Search
+		}
+	}
+</script>
