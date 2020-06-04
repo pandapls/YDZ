@@ -1,0 +1,507 @@
+{
+    "id": 129682,
+    "condition": 4,
+    "title": "易点租 QuickPC E32A Pro 台式机 (G4900 3.1GHz/4G/240G/核显HD610/203V5LSB2 19.5英寸/Linux/USB无线网卡/8L机箱)",
+    "subTitle": "",
+    "miniTitle": "E32A Pro(G4900/4G/240G SSD/核显/203V5 19.5英寸)",
+    "categoryId": 86,
+    "brandId": 33,
+    "deposit": "1900.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 92121,
+            "rentAmount": "75",
+            "totalMonth": 36,
+            "rentDesc": [
+                " 随租随还",
+                "到期归还易点租，6个月后可随时退还，未满6个月退还需缴纳服务费"
+            ],
+            "isAssemble": true,
+            "averageRent": "72",
+            "rentTypeList": [
+                {
+                    "id": 166750,
+                    "rentTypeId": 92121,
+                    "startMonth": 1,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 75,
+                    "standardRent": 54,
+                    "diffRent": 21,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 166751,
+                    "rentTypeId": 92121,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 65,
+                    "standardRent": 43,
+                    "diffRent": 22,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金",
+            "perMonthList": [
+                "1-24期：75元/月,",
+                "25-36期：65元/月"
+            ]
+        },
+        {
+            "payType": 1,
+            "productRentId": 92122,
+            "rentAmount": "200",
+            "totalMonth": 12,
+            "rentDesc": [
+                "租完即送",
+                "到期归承租方，不可退还"
+            ],
+            "isAssemble": false,
+            "rentTypeList": [
+                {
+                    "id": 166752,
+                    "rentTypeId": 92122,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 200,
+                    "standardRent": 109,
+                    "diffRent": 91,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金"
+        },
+        {
+            "payType": 1,
+            "productRentId": 92123,
+            "rentAmount": "130",
+            "totalMonth": 24,
+            "rentDesc": [
+                "租完即送",
+                "到期归承租方，不可退还"
+            ],
+            "isAssemble": false,
+            "rentTypeList": [
+                {
+                    "id": 166753,
+                    "rentTypeId": 92123,
+                    "startMonth": 1,
+                    "endMonth": 24,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 130,
+                    "standardRent": 69,
+                    "diffRent": 61,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金"
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [
+        1,
+        1
+    ],
+    "addedServiceTypeIds": [
+        1,
+        2
+    ],
+    "softServiceTypeIds": [
+        1
+    ],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        "易点租提供整机快换服务",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2019/07/985e26430ce0364eeda2d6c47ed6c9b4.jpg\" /></p>",
+    "productConfig": "<table cellpadding=\"0\" cellspacing=\"1\" class=\"fjd\" width=\"100%\">\n\t<colgroup>\n\t\t<col style=\"width:87pt\" width=\"116\" />\n\t\t<col style=\"width:221pt\" width=\"294\" />\n\t</colgroup>\n\t<tbody>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">主体</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">型号</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">QuickPC E32A Pro</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">平台</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Intel</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">操作系统</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Linux</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">机箱规格</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">小型机箱</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">处理器</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">CPU类型</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Intel 赛扬系列</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">CPU型号</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">G4900</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">CPU速度</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">3.1GHz</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">核心/线程</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">2核/2线程</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">内存</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">内存容量</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">4GB</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">内存类型</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">DDR4</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">插槽数量</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">2</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">最大支持容量</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">32G</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">硬盘</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">硬盘类型</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">固态硬盘</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">硬盘容量</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">240G</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">显卡</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">显卡类型</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">核心显卡</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">显卡型号</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Intel UHD Graphics 610</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">显存容量</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">共享系统内存</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">光驱</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">光驱类型</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">无光驱</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">通信</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">有线网卡</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">10/100/1000Mbps网卡</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl66\" height=\"21\" style=\"border:1pt solid #cccccc; background:white; height:15.75pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">无线网卡</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">USB无线网卡</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">前(侧)置面板IO端口</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">音频端口</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">麦克风接口*1、耳机接口*1</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">USB</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">3.0*2个</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Type-c接口</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">无</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">读卡器</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">无</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl66\" height=\"21\" style=\"border:1pt solid #cccccc; background:white; height:15.75pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">其他接口</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">无</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">后置面板IO端口</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">音频端口</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">3个</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">PS/2接口</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">可选</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">USB</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">3.0*2个/2.0*2个</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">Type-C端口</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">无</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">显示端</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">VGA*1,HDMI*1</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"39\" style=\"height:29.25pt\">\n\t\t\t<td class=\"xl66\" height=\"39\" style=\"border:1pt solid #cccccc; background:white; height:29.25pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">RJ45（以太网口）</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">1个</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">其他接口</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">无</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl72\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"color:#333333\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">显示器</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl65\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">型号</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl69\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">飞利浦 203V5LSB2</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl65\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">屏幕尺寸</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl69\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">19.5英寸</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl65\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">显示比例</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl69\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">16:9</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl65\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">分辨率</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl69\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">1600*900</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl65\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">屏幕类型</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl69\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"color:black\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">LED背光显示屏/TN面板</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">输入设备</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">键盘</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">键盘*1</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">鼠标</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">鼠标*1</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">电源</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">电源功率</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">200W</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"21\" style=\"height:15.75pt\">\n\t\t\t<td class=\"xl70\" colspan=\"2\" height=\"21\" style=\"border:none; border-bottom:1pt solid #cccccc; background:#f9f9f9; border-right:1.0pt solid #cccccc; height:15.75pt; width:308pt; text-align:left; vertical-align:middle; border-top:1pt solid #cccccc; border-left:1pt solid #cccccc; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"410\"><span style=\"font-size:11pt\"><span style=\"font-weight:700\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">机器规格</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">尺寸</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">约295&times;93&times;290mm</span></span></span></span></span></span></td>\n\t\t</tr>\n\t\t<tr height=\"20\" style=\"height:15.0pt\">\n\t\t\t<td class=\"xl66\" height=\"20\" style=\"border:1pt solid #cccccc; background:white; height:15.0pt; border-top:none; width:87pt; text-align:left; vertical-align:middle; white-space:normal; padding-left:24px; padding-top:1px; padding-right:1px\" width=\"116\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">净重</span></span></span></span></span></span></td>\n\t\t\t<td class=\"xl68\" style=\"border:1pt solid #cccccc; background:white; border-top:none; border-left:none; width:221pt; text-align:left; vertical-align:middle; white-space:normal; padding-top:1px; padding-right:1px; padding-left:1px\" width=\"294\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Microsoft YaHei&quot;,sans-serif\"><span style=\"color:black\"><span style=\"font-weight:400\"><span style=\"font-style:normal\"><span style=\"text-decoration:none\">约6.5kg</span></span></span></span></span></span></td>\n\t\t</tr>\n\t</tbody>\n</table>",
+    "stock": 275,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "75.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/5f76146cc817437d80d78f8e2a018f39/1.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/5f76146cc817437d80d78f8e2a018f39/2.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/5f76146cc817437d80d78f8e2a018f39/3.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/5f76146cc817437d80d78f8e2a018f39/4.jpg"
+        }
+    ],
+    "productParts": [
+        {
+            "id": 111428,
+            "name": "办公电脑上门安装服务 (1-30台费用360元，超过30台每增加一台增加10元)",
+            "salePrice": 360,
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/7919431b32dc7a1fe7039d3fdd5f441a.jpg",
+            "miniName": "办公电脑上门安装服务"
+        },
+        {
+            "id": 116367,
+            "name": "软件预装服务(仅限易点租租赁的PC类商品，10元/台/次） ",
+            "salePrice": 10,
+            "filePath": "https://edzimg.edianzu.com/product/2018/09/797a38499a05863e85152166d52e6c30.jpg",
+            "miniName": "软件预装服务"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 92121,
+            "productId": 129682,
+            "totalMonth": 36,
+            "firstRent": 75,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1587388446000,
+            "mdate": 1587388446000,
+            "productRentItemList": [
+                {
+                    "id": 166750,
+                    "rentTypeId": 92121,
+                    "startMonth": 1,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 75,
+                    "standardRent": 54,
+                    "diffRent": 21,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 75
+                    }
+                },
+                {
+                    "id": 166751,
+                    "rentTypeId": 92121,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 65,
+                    "standardRent": 43,
+                    "diffRent": 22,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 65
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 166750,
+                        "rentTypeId": 92121,
+                        "startMonth": 1,
+                        "endMonth": 24,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 75,
+                        "standardRent": 54,
+                        "diffRent": 21,
+                        "status": 0,
+                        "condition": 4,
+                        "cdate": 1587388446000,
+                        "mdate": 1587388446000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 24923,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 75
+                        }
+                    },
+                    {
+                        "id": 166751,
+                        "rentTypeId": 92121,
+                        "startMonth": 25,
+                        "endMonth": 36,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 65,
+                        "standardRent": 43,
+                        "diffRent": 22,
+                        "status": 0,
+                        "condition": 4,
+                        "cdate": 1587388446000,
+                        "mdate": 1587388446000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 24923,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 65
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        },
+        {
+            "id": 92122,
+            "productId": 129682,
+            "totalMonth": 12,
+            "firstRent": 200,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1587388446000,
+            "mdate": 1587388446000,
+            "productRentItemList": [
+                {
+                    "id": 166752,
+                    "rentTypeId": 92122,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 200,
+                    "standardRent": 109,
+                    "diffRent": 91,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 200
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 166752,
+                        "rentTypeId": 92122,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 3,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 200,
+                        "standardRent": 109,
+                        "diffRent": 91,
+                        "status": 0,
+                        "condition": 4,
+                        "cdate": 1587388446000,
+                        "mdate": 1587388446000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 24923,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 200
+                        }
+                    }
+                ]
+            },
+            "isRecommend": false,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        },
+        {
+            "id": 92123,
+            "productId": 129682,
+            "totalMonth": 24,
+            "firstRent": 130,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1587388446000,
+            "mdate": 1587388446000,
+            "productRentItemList": [
+                {
+                    "id": 166753,
+                    "rentTypeId": 92123,
+                    "startMonth": 1,
+                    "endMonth": 24,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 130,
+                    "standardRent": 69,
+                    "diffRent": 61,
+                    "status": 0,
+                    "condition": 4,
+                    "cdate": 1587388446000,
+                    "mdate": 1587388446000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 24923,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 130
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 166753,
+                        "rentTypeId": 92123,
+                        "startMonth": 1,
+                        "endMonth": 24,
+                        "rentType": 3,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 130,
+                        "standardRent": 69,
+                        "diffRent": 61,
+                        "status": 0,
+                        "condition": 4,
+                        "cdate": 1587388446000,
+                        "mdate": 1587388446000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 24923,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 130
+                        }
+                    }
+                ]
+            },
+            "isRecommend": false,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 1,
+    "presaleStock": 0,
+    "isSub": false,
+    "logicStock": 275,
+    "isHaveStock": 1,
+    "subLink": "",
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "limitedNum": 0,
+    "limitedNumOriginal": 0,
+    "packageDescribe": "主机*1/电源线*1/鼠标*1/键盘*1",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 1,
+    "deviceInsurancePrice": 3,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[24923]",
+    "standardImageUrl": "",
+    "brandImageUrl": "",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}

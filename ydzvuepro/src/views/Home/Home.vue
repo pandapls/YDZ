@@ -14,7 +14,7 @@
 			</mt-swipe>
 		</Banner>
 		<Itemhot></Itemhot>
-		<div class="nowreg " >
+		<div class="nowreg " @click="getPath">
 			<div class="title"></div>
 			<ul class="content clearfloat">
 				<li>
@@ -46,6 +46,7 @@
 	
 	export default {
 		name: 'Home',
+		props:['path'],
 		data: function() {
 			return {
 				blurColor: "#00a6ff"
@@ -56,7 +57,13 @@
 			Banner,
 			Itemhot,
 			Homelist
-		}
+		},
+		methods:{
+			getPath(){
+				console.log(this.$store.state.listpath)
+			}
+		},
+		
 	}
 </script>
 <style lang="less">
