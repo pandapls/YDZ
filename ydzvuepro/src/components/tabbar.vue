@@ -31,6 +31,7 @@
 		methods:{
 			getVal(val){
 				this.curr=val;
+				this.$router.push('/'+this.curr)
 			}
 		},
 		components: {
@@ -44,18 +45,24 @@
 		width: 100%;
 		display: flex;
 		border-top:1px solid #efefef;
-		padding-top: .4rem;
+		padding: 20/100rem 0;
 		position: fixed;
 		bottom: 0;
 		left: 0;
+		font-size: 10px;
+		background: white;
+		z-index: 10000;
 		.zero{
-			padding: .1rem;
+			display: inline-block;
+			width: 30/100rem;
+			height: 30/100rem;
+			line-height: 30/100rem;
 			color: white;
 			background-color: #e45050;
 			border-radius: 50%;
 			position: absolute;
-			top: -.3rem;
-			right: .3rem;
+			top: -10/100rem;
+			right: 40/100rem;
 		}
 	}
 </style>

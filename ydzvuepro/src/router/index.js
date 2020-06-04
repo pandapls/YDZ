@@ -37,5 +37,5 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   routes
 })
-
+router.push('/home')
 export default router

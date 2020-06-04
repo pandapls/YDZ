@@ -22,7 +22,7 @@
 		methods: {
             send(){
             	this.$emit('change',this.mark)
-            	this.$router.push('/'+this.mark)
+            	
             }
 		}
 	}
@@ -30,14 +30,15 @@
 <style lang="less">
 	@import url("../assets/iconfont/iconfont.css");
 	.tbchild {
-		
 		flex: 1;
-		font-size: 16px;
-		line-height: .15rem;
+		padding:0 25/100rem;
 		position:relative;
-		
+		text-align: center;
+		p{
+			margin-top: 5/100rem;
+		}
 		.iconfont  {
-			font-size: 30px;
+			font-size:22px;
 		}
 		.active{
 			color: #69baff;
