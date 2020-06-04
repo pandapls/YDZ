@@ -30,6 +30,10 @@ app.get('/homeHot',(req,res)=>{
     let data =require('./data/Goodslist/bijiben.json')
      res.send(data);
  })
+ app.get('/yitiji',(req,res)=>{
+    let data =require('./data/Goodslist/yitiji.json')
+     res.send(data);
+ })
  app.get('/taishiji',(req,res)=>{
     let data =require('./data/Goodslist/taishiji.json')
      res.send(data);
@@ -86,8 +90,8 @@ app.get('/homeHot',(req,res)=>{
     let data =require('./data/Goodslist/office.json')
      res.send(data);
  })
- app.get('/detail',(req,res)=>{
-    let data =require('./data/Goodsdetail/Goodsdetail.json')
+ app.get('/121171',(req,res)=>{
+    let data =require('./data/Goodsdetail/121171.json')
      res.send(data);
  })
 

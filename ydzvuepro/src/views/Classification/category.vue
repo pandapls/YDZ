@@ -6,7 +6,7 @@
 				<h3> <i class="line"></i>{{item.hTitle}}</h3>
 				<div>
 					<van-grid :column-num="4" icon-size="40px">
-						<van-grid-item v-for="(itemc,indexc) in item.products" :key="indexc" :text="itemc.name" :icon="itemc.imgSrc" to="" />
+						<van-grid-item v-for="(itemc,indexc) in item.products" :key="indexc" :text="itemc.name" :icon="itemc.imgSrc" to="/" @click="getPath(itemc.path)"/>
 					</van-grid>
 				</div>
 			</div>
@@ -35,12 +35,16 @@
 				await fetch(path)
 					.then(res => res.json())
 					.then(data => {
-						console.log(data);
+//						console.log(data);
 						this.msg = data;
 					})
 					.catch(function(e) {
 						console.log("oops! error:", e.message);
 					});
+			},
+			getPath(val){
+				console.log(val)
+				 this.$store.state.listpath =val
 			}
 		}
 	};

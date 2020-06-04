@@ -36,7 +36,7 @@
 				fetch(path)
 					.then(res => res.json())
 					.then(data => {
-						console.log(data);
+//						console.log(data);
 						this.homelist = data;
 					})
 					.catch(function(e) {

@@ -7,10 +7,10 @@
 			<ul v-for="item,index in hotlist">
 				<li>
 					<router-link to=/>
-					<p>{{item.name}}</p>
-					<p>￥{{item.money}}/月</p>
-					<span class="go">GO></span>
-					<img :src="item.imgSrc" alt="" />
+						<p>{{item.name}}</p>
+						<p>￥{{item.money}}/月</p>
+						<span class="go">GO></span>
+						<img :src="item.imgSrc" alt="" />
 					</router-link>
 				</li>
 
@@ -35,7 +35,7 @@
 				fetch(path)
 					.then(res => res.json())
 					.then(data => {
-						console.log(data);
+//						console.log(data);
 						this.hotlist = data;
 					})
 					.catch(function(e) {
