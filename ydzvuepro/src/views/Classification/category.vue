@@ -6,7 +6,7 @@
 				<h3> <i class="line"></i>{{item.hTitle}}</h3>
 				<div>
 					<van-grid :column-num="4" icon-size="40px">
-						<van-grid-item v-for="(itemc,indexc) in item.products" :key="indexc" :text="itemc.name" :icon="itemc.imgSrc" to="/" @click="getPath(itemc.path)"/>
+						<van-grid-item v-for="(itemc,indexc) in item.products" :key="indexc" :text="itemc.name" :icon="itemc.imgSrc" to="/goodslist" @click="getPath(itemc.path)"/>
 					</van-grid>
 				</div>
 			</div>
