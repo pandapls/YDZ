@@ -94,6 +94,7 @@ app.get('/homeHot',(req,res)=>{
     let data =require('./data/Goodsdetail/121171.json')
      res.send(data);
  })
+ 
 
 
 // app.use(bodyParser.urlencoded({extended:false}))

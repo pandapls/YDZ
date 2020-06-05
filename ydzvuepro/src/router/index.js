@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home/Home.vue'
 import Mine from '../views/Mine/Mine.vue'
 import Category from '../views/Classification/category.vue'
+import Goodsdetail from '../views/Classification/Goodsdetail.vue'
 import Shopping from '../views/Shopping/Shopping.vue'
 Vue.use(VueRouter)
 
@@ -26,6 +27,11 @@ Vue.use(VueRouter)
     path: '/category',
     name: 'Category',
     component: Category
+  },
+  {
+    path: '/goodsdetail',
+    name: 'Goodsdetail',
+    component: Goodsdetail
   },
   {
     path: '/shopping',
