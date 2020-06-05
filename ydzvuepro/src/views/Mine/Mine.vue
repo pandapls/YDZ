@@ -70,7 +70,7 @@
     }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	@import url("../../assets/mine-icon/iconfont.css");
 	.mine {
 		font-family: "微软雅黑";

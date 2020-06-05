@@ -1,7 +1,7 @@
 <template>
 	<div >
 		<Search></Search>
-		<Navitem></Navitem>
+		<Navitem ></Navitem>
 	</div>
 </template>
 

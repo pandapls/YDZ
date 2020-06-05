@@ -5,6 +5,7 @@ import Mine from '../views/Mine/Mine.vue'
 import Category from '../views/Classification/category.vue'
 import Shopping from '../views/Shopping/Shopping.vue'
 import Goodslist from '../views/Classification/Goodslist.vue'
+import Havedata from '../views/Shopping/havedata.vue'
 Vue.use(VueRouter)
 
   const routes = [
@@ -38,6 +39,11 @@ Vue.use(VueRouter)
 			path: '/goodslist',
 			 name: 'goodslist',
 			 component: Goodslist
+	},
+	 {
+			path: '/havedata',
+			 name: 'havedata',
+			 component: Havedata
 	}
 ]
 

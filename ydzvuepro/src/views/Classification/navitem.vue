@@ -1,15 +1,15 @@
 <template>
-	<div class="nav">
+	<div class="nav animate__animated animate__zoomIn">
 		<div class="navbox">
-			<div class="active">默认排行</div>
-			<div>销量</div>
-			<div>价格</div>
+			<div class="active" @click="moren">默认排行</div>
+			<div @click="changeSell">销量</div>
+			<div @click="changePri">价格</div>
 			<div class="active" @click="showRight">
 					筛选
 			</div>
 		</div>
 		<div class="mark" v-show="isShow">
-			<div class="popup" >
+			<div class="popup animate__animated " :class="ani" >
 			<div class="title">
 				<van-icon name="arrow-left" @click="back"/>
 				<span>筛选</span>
@@ -23,25 +23,28 @@
 			<div class="labels" v-for="zitem,zindex in labels.personal">
 				<p class="title" >{{zitem.label}}：</p>
 				<div class="labelbox clearfloat" >
-					<span class="label" v-for="items,indexs in zitem.content"   @click="getIndex2(indexs)" :class="{active:getIndex2==indexs}" >{{items.k}}</span>
+					<span class="label" v-for="items,indexs in zitem.content"   @click="getIndex2(items,zindex,indexs)" :class="{active:indexs==zitem.zindex}" >{{items.k}}</span>
 
 				</div>
 			</div>
 		</div>
 		</div>
-		<section class="content" v-for="(item,index) in Goodslist">
+		<lazy-component>
+			
+			<section class="content " v-for="(item,index) in Goodslist">
 			<div class="bleft">
 				<img :src="item.pic" />
 			</div>
 			<div class="bright">
 				<p class="title"><span class="red">{{item.title.substring(1,3)}}</span>{{item.title}}</p>
-				<p class="dec">
+				<p class="dec clearfloat">
 					<span>固定租期</span>
 					<span>固定租期</span>
 				</p>
 				<p class="price">￥<span>{{item.price}}</span></p>
 			</div>
 		</section>
+		</lazy-component>
 	</div>
 </template>
 
@@ -57,9 +60,11 @@
 				labels:[],
 				jug:0,
 				jug2:false,
-				num:0
+				num:0,
+				ani:'animate__fadeInRight'
 			}
 		},
+		
 		mounted: function() {
 			this.getHoneData("http://localhost:8000/" + this.$store.state.listpath);
 			this.getSXData("http://localhost:8000/subscreen")
@@ -70,7 +75,7 @@
 				fetch(path)
 					.then(res => res.json())
 					.then(data => {
-//						console.log(data);
+						console.log(data);
 						this.Goodslist = data;
 					})
 					.catch(function(e) {
@@ -91,19 +96,39 @@
 			},
 			showRight(){
 				this.isShow=true
-				
+				this.ani ="animate__fadeInRight"
 			},
 			getIndex(val){
 				this.labels=this.Sxlist[val]
 				console.log(this.labels)
 				this.jug = val
 			},
-			getIndex2(index){
-					return index
+			getIndex2(items,zindex,indexs){
+					this.labels.personal[zindex]=indexs
+					
+					console.log(this.labels.personal[zindex]==indexs)
+					console.log(this.labels.personal[zindex],indexs)
 			},
 			back(){
 				this.isShow=false
+				this.ani ="animate__fadeOutRight"
+			},
+			changeSell(){
+				function sortRule(a,b){
+					return a.saleCount - b.saleCount
+				}
+				console.log('chang',this.Goodslist.sort(sortRule))
+			},
+			changePri(){
+				function sortRule(a,b){
+					return parseInt( a.price ) - parseInt(b.price)
+				}
+				console.log('chang',this.Goodslist.sort(sortRule))
+			},
+			moren(){
+				this.getHoneData("http://localhost:8000/" + this.$store.state.listpath);
 			}
+			
 		}
 	}
 </script>
@@ -139,13 +164,17 @@
    			 z-index: 20000;
    			 overflow: hidden;
 		}
+		
+		
 		.popup{
+		
 			height: 100%;
 			width: 80%;
 			background: white;
 			position: fixed;
-			right: 0;
+			right: 0%;
 			top: 0;
+			transition:1s  all;
 			    overflow: auto;
 			z-index: 21000;
 			>.title{
@@ -176,7 +205,6 @@
 					padding: 10/100rem;
 					line-height: 20px;
 					.label{
-						
 						float: left;
 						width: 135/100rem;
 						text-align: center;
@@ -202,6 +230,7 @@
 				}
 			}
 		}
+		
 		.content {
 			display: flex;
 			padding: 20/100rem;
@@ -248,7 +277,7 @@
 					}
 				}
 				.price {
-					color: #ef334d;
+					color: #f0334d;
 					font-size: 24/100rem;
 					span {
 						font-size: 30/100rem;
