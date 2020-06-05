@@ -1,0 +1,347 @@
+{
+    "id": 115892,
+    "condition": 1,
+    "title": "全新 惠普hp Z240工作站(i5-7500/16G/256G SSD+1T/P2000 5G独显/Linux/3年下一工作日上门)",
+    "subTitle": "限量促销 售完即止",
+    "miniTitle": "i5-7500/16G/256G SSD+1T/P2000 5G独显",
+    "categoryId": 130,
+    "brandId": 10,
+    "deposit": "7800.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 91605,
+            "rentAmount": "328",
+            "totalMonth": 36,
+            "rentDesc": [
+                " 随租随还",
+                "到期归还易点租，6个月后可随时退还，未满6个月退还需缴纳服务费"
+            ],
+            "isAssemble": true,
+            "averageRent": "301",
+            "rentTypeList": [
+                {
+                    "id": 165760,
+                    "rentTypeId": 91605,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 328,
+                    "standardRent": 566,
+                    "diffRent": -238,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587370214000,
+                    "mdate": 1587370214000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12098,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 165761,
+                    "rentTypeId": 91605,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 298,
+                    "standardRent": 298,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587370214000,
+                    "mdate": 1587370214000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12098,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 165762,
+                    "rentTypeId": 91605,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 278,
+                    "standardRent": 278,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587370214000,
+                    "mdate": 1587370214000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12098,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金",
+            "perMonthList": [
+                "1-12期：328元/月,",
+                "13-24期：298元/月,",
+                "25-36期：278元/月"
+            ]
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [
+        1,
+        2
+    ],
+    "softServiceTypeIds": [],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        "易点租提供整机快换服务",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2020/04/e0659040af6b2e1bfd86d9dbef3f4ca1.jpg\" style=\"width: 750px; height: 4338px;\" /></p>",
+    "productConfig": "<table cellpadding=\"0\" cellspacing=\"1\" class=\"fjd\" width=\"100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">主体</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">品牌</td>\n\t\t\t<td>惠普HP</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">类别</td>\n\t\t\t<td>工作站</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">系列</td>\n\t\t\t<td>Z240</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">处理器</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">CPU类型</td>\n\t\t\t<td>英特尔酷睿i5</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">CPU型号</td>\n\t\t\t<td>i5-7500</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">内存</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">内存容量</td>\n\t\t\t<td>16GB</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">硬盘</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">硬盘容量</td>\n\t\t\t<td>256G SSD + 1T HDD</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">硬盘类型</td>\n\t\t\t<td>固态硬盘+机械硬盘</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">显卡</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">显卡型号</td>\n\t\t\t<td>Quadro P2000</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">显存容量</td>\n\t\t\t<td>5G</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">机器规格</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">体积</td>\n\t\t\t<td>338 x 381 x 100 毫米</td>\n\t\t</tr>\n\t</tbody>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">重量</td>\n\t\t\t<td>约5.7Kg</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+    "stock": 4,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "328.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/05/c70ab2fe85822c6ca26d23ec664c9f86.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/05/b8ac59a0203a6ca28d2eb7afd649f323.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/05/4453276e3ff4e2d9a5ffecf56516bfc2.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/05/883a268a057b6a394037e24a8424eeb7.jpg"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 91605,
+            "productId": 115892,
+            "totalMonth": 36,
+            "firstRent": 328,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1587370214000,
+            "mdate": 1587370214000,
+            "productRentItemList": [
+                {
+                    "id": 165760,
+                    "rentTypeId": 91605,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 328,
+                    "standardRent": 566,
+                    "diffRent": -238,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587370214000,
+                    "mdate": 1587370214000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12098,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 328
+                    }
+                },
+                {
+                    "id": 165761,
+                    "rentTypeId": 91605,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 298,
+                    "standardRent": 298,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587370214000,
+                    "mdate": 1587370214000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12098,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 298
+                    }
+                },
+                {
+                    "id": 165762,
+                    "rentTypeId": 91605,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 278,
+                    "standardRent": 278,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587370214000,
+                    "mdate": 1587370214000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12098,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 278
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 165760,
+                        "rentTypeId": 91605,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 328,
+                        "standardRent": 566,
+                        "diffRent": -238,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1587370214000,
+                        "mdate": 1587370214000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12098,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 328
+                        }
+                    },
+                    {
+                        "id": 165761,
+                        "rentTypeId": 91605,
+                        "startMonth": 13,
+                        "endMonth": 24,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 298,
+                        "standardRent": 298,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1587370214000,
+                        "mdate": 1587370214000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12098,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 298
+                        }
+                    },
+                    {
+                        "id": 165762,
+                        "rentTypeId": 91605,
+                        "startMonth": 25,
+                        "endMonth": 36,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 278,
+                        "standardRent": 278,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1587370214000,
+                        "mdate": 1587370214000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12098,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 278
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 0,
+    "presaleStock": 0,
+    "isSub": false,
+    "logicStock": 4,
+    "isHaveStock": 1,
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "limitedNum": 9,
+    "limitedNumOriginal": 9,
+    "packageDescribe": "主机*1/电源线*1",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[12098]",
+    "standardImageUrl": "",
+    "brandImageUrl": "",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}

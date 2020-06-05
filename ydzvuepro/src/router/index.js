@@ -5,6 +5,7 @@ import Mine from '../views/Mine/Mine.vue'
 import Category from '../views/Classification/category.vue'
 import Goodsdetail from '../views/Classification/Goodsdetail.vue'
 import Shopping from '../views/Shopping/Shopping.vue'
+import Goodslist from '../views/Classification/Goodslist.vue'
 Vue.use(VueRouter)
 
   const routes = [
@@ -26,7 +27,8 @@ Vue.use(VueRouter)
   {
     path: '/category',
     name: 'Category',
-    component: Category
+    component: Category,
+
   },
   {
     path: '/goodsdetail',
@@ -37,11 +39,21 @@ Vue.use(VueRouter)
     path: '/shopping',
     name: 'Shopping',
     component: Shopping
-  }
+  },
+ {
+			path: '/goodslist',
+			 name: 'goodslist',
+			 component: Goodslist
+	}
 ]
 
 const router = new VueRouter({
   routes
 })
+const originalPush = VueRouter.prototype.push;
+VueRouter.prototype.push = function push(location) {
+return originalPush.call(this, location).catch(err => err)
+};
+
 router.push('/home')
 export default router

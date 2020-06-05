@@ -94,7 +94,27 @@ app.get('/homeHot',(req,res)=>{
     let data =require('./data/Goodsdetail/121171.json')
      res.send(data);
  })
+<<<<<<< HEAD
  
+=======
+ app.get('/115892',(req,res)=>{
+    let data =require('./data/Goodsdetail/115892.json')
+     res.send(data);
+ })
+ app.get('/124713',(req,res)=>{
+    let data =require('./data/Goodsdetail/124713.json')
+     res.send(data);
+ })
+ app.get('/129682',(req,res)=>{
+    let data =require('./data/Goodsdetail/129682.json')
+     res.send(data);
+ })
+ app.get('/130022',(req,res)=>{
+    let data =require('./data/Goodsdetail/130022.json')
+     res.send(data);
+ })
+
+>>>>>>> d0745bd2a48ffc66139540fc3e3174fb6cae6761
 
 
 // app.use(bodyParser.urlencoded({extended:false}))

@@ -1,0 +1,368 @@
+{
+    "id": 124713,
+    "condition": 2,
+    "title": "飞利浦(PHILIPS) 240V5QSB 23.8英寸显示器 IPS面板 1920*1080 VGA/DVI接口 VGA/DVI线",
+    "subTitle": "该设备自带DVI线一根，VGA线一根，如需连接其他端口，需单独购买其他视频连接线。",
+    "miniTitle": "240V5/23.8英寸/IPS",
+    "categoryId": 83,
+    "brandId": 41,
+    "deposit": "700.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 108719,
+            "rentAmount": "33",
+            "totalMonth": 36,
+            "rentDesc": [
+                " 随租随还",
+                "到期归还易点租，6个月后可随时退还，未满6个月退还需缴纳服务费"
+            ],
+            "isAssemble": true,
+            "averageRent": "29",
+            "rentTypeList": [
+                {
+                    "id": 197485,
+                    "rentTypeId": 108719,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 33,
+                    "standardRent": 33,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1590665567000,
+                    "mdate": 1590665567000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 20533,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 197486,
+                    "rentTypeId": 108719,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 30,
+                    "standardRent": 30,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1590665567000,
+                    "mdate": 1590665567000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 20533,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 197487,
+                    "rentTypeId": 108719,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 25,
+                    "standardRent": 25,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1590665567000,
+                    "mdate": 1590665567000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 20533,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金",
+            "perMonthList": [
+                "1-12期：33元/月,",
+                "13-24期：30元/月,",
+                "25-36期：25元/月"
+            ]
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [
+        1,
+        1
+    ],
+    "addedServiceTypeIds": [
+        1,
+        2
+    ],
+    "softServiceTypeIds": [
+        1
+    ],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        "易点租提供整机快换服务",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2019/07/8cd3a0c9fa1774875a900081630be985.jpg\" style=\"width: 750px; height: 5145px;\" /></p>",
+    "productConfig": "<table cellpadding=\"0\" cellspacing=\"1\" class=\"fjd\" style=\"width:100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">主体</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>品牌</td>\n\t\t\t<td>飞利浦 Philips</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>型号</td>\n\t\t\t<td>240V5QSB</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>外观颜色</td>\n\t\t\t<td>黑色</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>颜色</td>\n\t\t\t<td>黑色</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">显示</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>面板类型</td>\n\t\t\t<td>IPS-ADS</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>尺寸范围</td>\n\t\t\t<td>22.5-25英寸</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>屏幕尺寸</td>\n\t\t\t<td>23.8英寸</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>宽屏</td>\n\t\t\t<td>是</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>屏幕比例</td>\n\t\t\t<td>16:9</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>最佳分辨率</td>\n\t\t\t<td>1920 x 1080</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>响应范围</td>\n\t\t\t<td>&gt;5ms</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>响应时间</td>\n\t\t\t<td>14ms</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>点距</td>\n\t\t\t<td>0.275&times;0.275 毫米</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>色数</td>\n\t\t\t<td>16.7M</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>亮度</td>\n\t\t\t<td>250cd/m2</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>对比度</td>\n\t\t\t<td>SmartContrast 对 比 度 ： 10,000,000：1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>可视角度</td>\n\t\t\t<td>178 度（水平）/178 度（垂直），@ C/R &gt;10</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>HDCP功能</td>\n\t\t\t<td>支持</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>LED背光</td>\n\t\t\t<td>是</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">接口</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>VGA接口</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>DVI接口</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>VGA</td>\n\t\t\t<td>1个</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>DVI</td>\n\t\t\t<td>1个</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">规格</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>电源</td>\n\t\t\t<td>内置，100-240 伏交流， 50-60 赫兹</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>尺寸</td>\n\t\t\t<td>带 支 座 的 产 品 （ 毫 米 ）： 553&times;420&times;219 毫米</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>重量</td>\n\t\t\t<td>带支座的产品（千克）：4.09 千 克</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>底座</td>\n\t\t\t<td>普通</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+    "stock": 153,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "33.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/f82e371847c3781db8977274c6779f94.png"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/c4a80c8fa68f69c075b5236e6a80055f.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/5f6848f6b443a74bdd07a44bdbac6b41.png"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/fe476531793e5a90685b199e1630522b.png"
+        }
+    ],
+    "productParts": [
+        {
+            "id": 111428,
+            "name": "办公电脑上门安装服务 (1-30台费用360元，超过30台每增加一台增加10元)",
+            "salePrice": 360,
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/7919431b32dc7a1fe7039d3fdd5f441a.jpg",
+            "miniName": "办公电脑上门安装服务"
+        },
+        {
+            "id": 116367,
+            "name": "软件预装服务(仅限易点租租赁的PC类商品，10元/台/次） ",
+            "salePrice": 10,
+            "filePath": "https://edzimg.edianzu.com/product/2018/09/797a38499a05863e85152166d52e6c30.jpg",
+            "miniName": "软件预装服务"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 108719,
+            "productId": 124713,
+            "totalMonth": 36,
+            "firstRent": 33,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1590665567000,
+            "mdate": 1590665567000,
+            "productRentItemList": [
+                {
+                    "id": 197485,
+                    "rentTypeId": 108719,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 33,
+                    "standardRent": 33,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1590665567000,
+                    "mdate": 1590665567000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 20533,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 33
+                    }
+                },
+                {
+                    "id": 197486,
+                    "rentTypeId": 108719,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 30,
+                    "standardRent": 30,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1590665567000,
+                    "mdate": 1590665567000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 20533,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 30
+                    }
+                },
+                {
+                    "id": 197487,
+                    "rentTypeId": 108719,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 25,
+                    "standardRent": 25,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1590665567000,
+                    "mdate": 1590665567000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 20533,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 25
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 197485,
+                        "rentTypeId": 108719,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 33,
+                        "standardRent": 33,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 2,
+                        "cdate": 1590665567000,
+                        "mdate": 1590665567000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 20533,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 33
+                        }
+                    },
+                    {
+                        "id": 197486,
+                        "rentTypeId": 108719,
+                        "startMonth": 13,
+                        "endMonth": 24,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 30,
+                        "standardRent": 30,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 2,
+                        "cdate": 1590665567000,
+                        "mdate": 1590665567000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 20533,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 30
+                        }
+                    },
+                    {
+                        "id": 197487,
+                        "rentTypeId": 108719,
+                        "startMonth": 25,
+                        "endMonth": 36,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 25,
+                        "standardRent": 25,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 2,
+                        "cdate": 1590665567000,
+                        "mdate": 1590665567000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 20533,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 25
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 0,
+    "presaleStock": 0,
+    "isSub": false,
+    "logicStock": 153,
+    "isHaveStock": 1,
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "limitedNum": 0,
+    "limitedNumOriginal": 0,
+    "packageDescribe": "显示器*1/电源线*1/DVI线*1/VGA线*1",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 1,
+    "deviceInsurancePrice": 3,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[20533]",
+    "standardImageUrl": "",
+    "brandImageUrl": "",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}
