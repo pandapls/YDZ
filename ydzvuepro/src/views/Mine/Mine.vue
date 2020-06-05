@@ -44,15 +44,14 @@
 		<div class="server">
 			<p class="sev-tit">其他服务</p>
 			<ul>
-				<li>
+				<li @click="onAddress">
 					<span class="iconfont icon-shouhuodizhi"></span>
 					<p>收货地址</p>
 						
 				</li>
 				<li>
 					<span class="iconfont icon-rengongfuwu"></span>
-					<p>人工服务</p>
-						
+					<p>人工服务</p>						
 				</li>
 			</ul>
 		</div>
@@ -65,6 +64,9 @@
     	methods:{
     		back(){
     			this.$router.go(-1)
+    		},
+    		onAddress(){
+    			this.$router.push('/address')
     		}
     	}
     }
