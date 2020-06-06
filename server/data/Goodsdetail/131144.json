@@ -1,0 +1,361 @@
+{
+    "id": 131144,
+    "condition": 4,
+    "title": "2018款 Apple iPad 平板电脑 9.7英寸（32G WLAN版/A10 芯片/Retina显示屏/Touch ID技术 MRJN2CH/A）金色",
+    "subTitle": "",
+    "miniTitle": "32G/金色",
+    "categoryId": 52,
+    "brandId": 29,
+    "deposit": "2200.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 61114,
+            "rentAmount": "88",
+            "totalMonth": 36,
+            "rentDesc": [
+                " 随租随还",
+                "到期归还易点租，6个月后可随时退还，未满6个月退还需缴纳服务费"
+            ],
+            "isAssemble": true,
+            "averageRent": "78",
+            "rentTypeList": [
+                {
+                    "id": 110842,
+                    "rentTypeId": 61114,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 88,
+                    "standardRent": 89,
+                    "diffRent": -1,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1572854278000,
+                    "mdate": 1572854278000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 19265,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 110843,
+                    "rentTypeId": 61114,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 78,
+                    "standardRent": 83,
+                    "diffRent": -5,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1572854278000,
+                    "mdate": 1572854278000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 19265,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 110844,
+                    "rentTypeId": 61114,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 68,
+                    "standardRent": 81,
+                    "diffRent": -13,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1572854278000,
+                    "mdate": 1572854278000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 19265,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金",
+            "perMonthList": [
+                "1-12期：88元/月,",
+                "13-24期：78元/月,",
+                "25-36期：68元/月"
+            ]
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [
+        1,
+        2
+    ],
+    "softServiceTypeIds": [
+        1
+    ],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2018/04/0bf496f83b5395e89631daaa7c4c5b5b.jpg\" /></p>",
+    "productConfig": "<table cellpadding=\"0\" cellspacing=\"1\" class=\"fjd\" width=\"100%\">\n\t<tbody>\n\t\t<tr class=\"firstRow\">\n\t\t\t<th colspan=\"2\">主体</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">型号</td>\n\t\t\t<td>iPad&nbsp; MRJN2CH/A</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">操作系统</td>\n\t\t\t<td>iOS</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">处理器</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">CPU类型</td>\n\t\t\t<td>64位架构的 A10 Fusion 芯片&nbsp; 嵌入式 M10 协处理器</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">存储容量</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">存储容量</td>\n\t\t\t<td>32GB</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">显示</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">屏幕分辨率</td>\n\t\t\t<td>2048*1536</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">屏幕描述</td>\n\t\t\t<td>IPS视网膜显示屏 264 ppi</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">连接</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">WiFi功能</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">蓝牙功能</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">功能</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">音频端口</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">扬声器</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">麦克风</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">前置摄像头</td>\n\t\t\t<td>120W</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">后置摄像头</td>\n\t\t\t<td>800W</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">陀螺仪</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">光线感应</td>\n\t\t\t<td>有</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">电源</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">电池类型</td>\n\t\t\t<td>锂聚合物电池 32.4瓦时</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">续航时间</td>\n\t\t\t<td>使用时间最长可达10小时</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">机器规格</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">尺寸</td>\n\t\t\t<td>240mm X 169mm X 7.9mm</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">净重</td>\n\t\t\t<td>约469g</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">&nbsp;</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">&nbsp;</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+    "stock": 3,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "88.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/03/c585d55352c999179d20558e978a4ddb.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/03/b796ac4d4985b66d60f51d86cc5abfc4.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/03/bdb623bacc442cb1215ae03d79adb94d.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/03/f5af42896767b631252fb7f5236c5624.jpg"
+        }
+    ],
+    "productParts": [
+        {
+            "id": 116367,
+            "name": "软件预装服务(仅限易点租租赁的PC类商品，10元/台/次） ",
+            "salePrice": 10,
+            "filePath": "https://edzimg.edianzu.com/product/2018/09/797a38499a05863e85152166d52e6c30.jpg",
+            "miniName": "软件预装服务"
+        },
+        {
+            "id": 111428,
+            "name": "办公电脑上门安装服务 (1-30台费用360元，超过30台每增加一台增加10元)",
+            "salePrice": 360,
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/7919431b32dc7a1fe7039d3fdd5f441a.jpg",
+            "miniName": "办公电脑上门安装服务"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 61114,
+            "productId": 131144,
+            "totalMonth": 36,
+            "firstRent": 88,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1572854278000,
+            "mdate": 1572854278000,
+            "productRentItemList": [
+                {
+                    "id": 110842,
+                    "rentTypeId": 61114,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 88,
+                    "standardRent": 89,
+                    "diffRent": -1,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1572854278000,
+                    "mdate": 1572854278000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 19265,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 88
+                    }
+                },
+                {
+                    "id": 110843,
+                    "rentTypeId": 61114,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 78,
+                    "standardRent": 83,
+                    "diffRent": -5,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1572854278000,
+                    "mdate": 1572854278000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 19265,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 78
+                    }
+                },
+                {
+                    "id": 110844,
+                    "rentTypeId": 61114,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 68,
+                    "standardRent": 81,
+                    "diffRent": -13,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1572854278000,
+                    "mdate": 1572854278000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 19265,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 68
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 110842,
+                        "rentTypeId": 61114,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 88,
+                        "standardRent": 89,
+                        "diffRent": -1,
+                        "status": 0,
+                        "condition": 2,
+                        "cdate": 1572854278000,
+                        "mdate": 1572854278000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 19265,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 88
+                        }
+                    },
+                    {
+                        "id": 110843,
+                        "rentTypeId": 61114,
+                        "startMonth": 13,
+                        "endMonth": 24,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 78,
+                        "standardRent": 83,
+                        "diffRent": -5,
+                        "status": 0,
+                        "condition": 2,
+                        "cdate": 1572854278000,
+                        "mdate": 1572854278000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 19265,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 78
+                        }
+                    },
+                    {
+                        "id": 110844,
+                        "rentTypeId": 61114,
+                        "startMonth": 25,
+                        "endMonth": 36,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 68,
+                        "standardRent": 81,
+                        "diffRent": -13,
+                        "status": 0,
+                        "condition": 2,
+                        "cdate": 1572854278000,
+                        "mdate": 1572854278000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 19265,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 68
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 0,
+    "presaleStock": 0,
+    "isSub": false,
+    "logicStock": 3,
+    "isHaveStock": 1,
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "packageDescribe": "iPad主机*1/闪电转USB连接线*1/USB电源适配器*1",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[19265]",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}

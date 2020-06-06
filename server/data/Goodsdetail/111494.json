@@ -1,0 +1,55 @@
+{
+    "id": 111494,
+    "title": "软硬无忧服务(仅限易点租租赁的PC类商品，10元/台/月） ",
+    "subTitle": "",
+    "miniTitle": "软硬无忧服务",
+    "categoryId": 138,
+    "brandId": 33,
+    "deposit": "0.00",
+    "status": 0,
+    "rents": [],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [],
+    "softServiceTypeIds": [],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceId": [
+        null
+    ],
+    "serviceName": [
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2019/04/353da8797faffb0583d1b64866996f20.jpg\" /></p>",
+    "stock": 9999,
+    "isSale": true,
+    "salePrice": "10.00",
+    "minRentAmount": "0.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/04/d6430a38563c3fd8379844d86e091cea.jpg"
+        }
+    ],
+    "productRentModel": [],
+    "isPresale": 1,
+    "presaleStock": 9999,
+    "isSub": false,
+    "logicStock": 9999,
+    "isHaveStock": 1,
+    "payTypeList": [],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "packageDescribe": "",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "skuIds": "[9166]",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": true,
+    "search": true,
+    "ghost": false
+}

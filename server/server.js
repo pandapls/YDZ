@@ -110,6 +110,50 @@ app.get('/homeHot',(req,res)=>{
     let data =require('./data/Goodsdetail/130022.json')
      res.send(data);
  })
+ app.get('/111494',(req,res)=>{
+    let data =require('./data/Goodsdetail/111494.json')
+     res.send(data);
+ })
+ app.get('/113374',(req,res)=>{
+    let data =require('./data/Goodsdetail/113374.json')
+     res.send(data);
+ })
+ app.get('/114145',(req,res)=>{
+    let data =require('./data/Goodsdetail/114145.json')
+     res.send(data);
+ })
+ app.get('/116367',(req,res)=>{
+    let data =require('./data/Goodsdetail/116367.json')
+     res.send(data);
+ })
+ app.get('/116922',(req,res)=>{
+    let data =require('./data/Goodsdetail/116922.json')
+     res.send(data);
+ })
+ app.get('/118932',(req,res)=>{
+    let data =require('./data/Goodsdetail/118932.json')
+     res.send(data);
+ })
+ app.get('/120992',(req,res)=>{
+    let data =require('./data/Goodsdetail/120992.json')
+     res.send(data);
+ })
+ app.get('/127158',(req,res)=>{
+    let data =require('./data/Goodsdetail/127158.json')
+     res.send(data);
+ })
+ app.get('/129560',(req,res)=>{
+    let data =require('./data/Goodsdetail/129560.json')
+     res.send(data);
+ })
+ app.get('/129853',(req,res)=>{
+    let data =require('./data/Goodsdetail/129853.json')
+     res.send(data);
+ })
+ app.get('/131144',(req,res)=>{
+    let data =require('./data/Goodsdetail/131144.json')
+     res.send(data);
+ })
 
 
 

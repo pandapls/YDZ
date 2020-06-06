@@ -1,0 +1,66 @@
+{
+    "id": 116922,
+    "condition": 1,
+    "title": "全新 HDMI  数字高清线信号连接线 电脑显示器1.5m连接线",
+    "subTitle": "适用于连接带有HDMI接口的主机和显示器",
+    "miniTitle": "普通HDMI 1.5m连接线",
+    "categoryId": 101,
+    "brandId": 50,
+    "deposit": "0.00",
+    "status": 0,
+    "rents": [],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [],
+    "softServiceTypeIds": [],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceId": [
+        null
+    ],
+    "serviceName": [
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2019/06/f12f7d4b8c4dc6664a29e88439e7ea0a.jpg\" /></p>",
+    "productConfig": "<p>&nbsp;</p>\n\n<p>\n<audio controls=\"controls\" style=\"display: none;\">&nbsp;</audio>\n</p>",
+    "stock": 1858,
+    "isSale": true,
+    "salePrice": "18.00",
+    "minRentAmount": "0.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/06/8519eadb646d9f5ea9b76080ed87580a.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/06/bf7e2d2098ea2d2613fbb88f59000d17.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/06/932fd21309bc6942e7d71db544648a8a.jpg"
+        }
+    ],
+    "productRentModel": [],
+    "isPresale": 1,
+    "presaleStock": 999,
+    "isSub": false,
+    "logicStock": 1858,
+    "isHaveStock": 1,
+    "payTypeList": [],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "limitedNum": 0,
+    "limitedNumOriginal": 0,
+    "packageDescribe": "",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[12836]",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": true,
+    "search": true,
+    "ghost": false
+}

@@ -5,8 +5,8 @@
 		</div>
 		<div class="content">
 			<ul v-for="item,index in hotlist">
-				<li>
-					<router-link to=/>
+				<li @click="getPath(item.id)">
+					<router-link to="/goodsdetail"  >
 						<p>{{item.name}}</p>
 						<p>￥{{item.money}}/月</p>
 						<span class="go">GO></span>
@@ -24,12 +24,13 @@
 		name: "itemHot",
 		data: function() {
 			return {
-				hotlist: []
+				hotlist: [],
 			}
 		},
 		mounted: function() {
 			this.getHoneData("http://localhost:8000/homeHot");
 		},
+
 		methods: {
 			getHoneData(path) {
 				fetch(path)
@@ -41,6 +42,10 @@
 					.catch(function(e) {
 						console.log("oops! error:", e.message);
 					});
+			},
+			getPath(val){
+				console.log(val)
+				 this.$store.state.indexpath =val
 			}
 		}
 	}

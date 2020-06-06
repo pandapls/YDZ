@@ -1,0 +1,176 @@
+{
+    "id": 127158,
+    "title": "巡检服务",
+    "subTitle": "",
+    "miniTitle": "巡检服务：550元/次",
+    "categoryId": 160,
+    "brandId": 50,
+    "deposit": "0.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 49894,
+            "rentAmount": "500",
+            "totalMonth": 1,
+            "rentDesc": [
+                "租完即送",
+                "到期归承租方，不可退还"
+            ],
+            "isAssemble": false,
+            "rentTypeList": [
+                {
+                    "id": 90191,
+                    "rentTypeId": 49894,
+                    "startMonth": 1,
+                    "endMonth": 1,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 500,
+                    "standardRent": 500,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1563933677000,
+                    "mdate": 1571300515000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 23076,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金"
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [],
+    "softServiceTypeIds": [],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        "易点租提供整机快换服务",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2019/07/a550ca00acb82bf5d1e5f6032ef592af.jpg\" /></p>",
+    "stock": 10459,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "500.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2019/07/8d19d7a52c1d815eb107f055490b0f36.jpg"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 49894,
+            "productId": 127158,
+            "totalMonth": 1,
+            "firstRent": 500,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1563933677000,
+            "mdate": 1571398419000,
+            "productRentItemList": [
+                {
+                    "id": 90191,
+                    "rentTypeId": 49894,
+                    "startMonth": 1,
+                    "endMonth": 1,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 500,
+                    "standardRent": 500,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 2,
+                    "cdate": 1563933677000,
+                    "mdate": 1571300515000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 23076,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 500
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 90191,
+                        "rentTypeId": 49894,
+                        "startMonth": 1,
+                        "endMonth": 1,
+                        "rentType": 3,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 500,
+                        "standardRent": 500,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 2,
+                        "cdate": 1563933677000,
+                        "mdate": 1571300515000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 23076,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 500
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 1,
+    "presaleStock": 9999,
+    "isSub": false,
+    "logicStock": 10459,
+    "isHaveStock": 1,
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "packageDescribe": "",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "skuIds": "[23076]",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}

@@ -1,0 +1,181 @@
+{
+    "id": 113374,
+    "title": "微软/Microsoft 365 办公软件(商业标准版)",
+    "subTitle": "",
+    "miniTitle": "商业标准版",
+    "categoryId": 80,
+    "brandId": 38,
+    "deposit": "100.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 95687,
+            "rentAmount": "79",
+            "totalMonth": 12,
+            "rentDesc": [
+                "固定租期",
+                "到期归还易点租，提前退还需缴纳50%剩余租金"
+            ],
+            "isAssemble": false,
+            "rentTypeList": [
+                {
+                    "id": 173359,
+                    "rentTypeId": 95687,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 2,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 79,
+                    "standardRent": 79,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587989467000,
+                    "mdate": 1587989467000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12422,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金"
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [],
+    "softServiceTypeIds": [
+        1
+    ],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2020/04/a54f74f981912468ae12df15173d269f.jpg\" style=\"width: 750px; height: 1290px;\" /></p>",
+    "stock": 999,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "79.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/9b704ba6966a4607a64f8f3c70c96de7/office-365-标准版.jpg"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 95687,
+            "productId": 113374,
+            "totalMonth": 12,
+            "firstRent": 79,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1587989467000,
+            "mdate": 1587989467000,
+            "productRentItemList": [
+                {
+                    "id": 173359,
+                    "rentTypeId": 95687,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 2,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 79,
+                    "standardRent": 79,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1587989467000,
+                    "mdate": 1587989467000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12422,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 79
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 173359,
+                        "rentTypeId": 95687,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 2,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 79,
+                        "standardRent": 79,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1587989467000,
+                        "mdate": 1587989467000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12422,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 79
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 1,
+    "presaleStock": 999,
+    "isSub": false,
+    "logicStock": 999,
+    "isHaveStock": 1,
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "packageDescribe": "",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[12422]",
+    "standardImageUrl": "",
+    "brandImageUrl": "",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}

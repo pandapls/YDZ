@@ -1,0 +1,53 @@
+{
+    "id": 116367,
+    "title": "软件预装服务(仅限易点租租赁的PC类商品，10元/台/次） ",
+    "subTitle": "",
+    "miniTitle": "软件预装服务",
+    "categoryId": 140,
+    "brandId": 33,
+    "deposit": "0.00",
+    "status": 0,
+    "rents": [],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [],
+    "softServiceTypeIds": [],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceId": [],
+    "serviceName": [
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2018/09/b392e113b1970ed2494b4304e81d47f4.jpg\" style=\"width: 750px; height: 2097px;\"></p>",
+    "stock": 10851,
+    "isSale": true,
+    "salePrice": "10.00",
+    "minRentAmount": "0.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/09/797a38499a05863e85152166d52e6c30.jpg"
+        }
+    ],
+    "productRentModel": [],
+    "isPresale": 1,
+    "presaleStock": 9999,
+    "isSub": false,
+    "logicStock": 10851,
+    "isHaveStock": 1,
+    "payTypeList": [],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "packageDescribe": "",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "skuIds": "[12285]",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": true,
+    "search": true,
+    "ghost": false
+}

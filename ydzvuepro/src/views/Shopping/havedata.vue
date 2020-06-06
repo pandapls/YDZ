@@ -14,7 +14,7 @@
 					
 				</i> 租凭商品
 			</div>
-			<div class="item">
+			<div class="item" v-for="(item,index) in goodsData">
 				<mt-cell-swipe :right="[
 			    {
 			      content: '删除',
@@ -30,18 +30,18 @@
 					</i>
 							<div class="content">
 								<div class="img">
-
+									<img :src="item.imgSrc" />
 								</div>
 								<div class="dec">
-									<span>随租随还</span> ThinkPad L490 14英寸笔记本电脑(i3-8145U/4G/128G SSD/ UHDG620核显/ 1366*768/Win10 家庭版)
+									<span>随租随还</span> {{item.title}}
 								</div>
 								<div class="bottom">
-									<p>押金：<span class="yajing">￥2400</span></p>
-									<p>租金：<span class="price">￥90/月</span>首付期款：1/36</p>
+									<p>押金：<span class="yajing">￥{{item.yajin}}</span></p>
+									<p>租金：<span class="price">￥{{item.price}}/月</span>首付期款：1/36</p>
 									<div class="btn">
-										<span class="reduce">-</span>
-										<span class="num">1</span>
-										<span class="add">+</span>
+										<span class="reduce" @click="reduce">-</span>
+										<span class="num">{{$store.state.num}}</span>
+										<span class="add" @click="add">+</span>
 									</div>
 								</div>
 							</div>
@@ -53,13 +53,12 @@
 					<van-calendar v-model="show" @confirm="onConfirm" color="#95c6e7" />
 				</div>
 			</div>
-			
+
 		</div>
-		
-		
+
 		<div class="bottombox">
 			<div class="check">
-				应付总计：￥<span class="allprice">4465</span>
+				应付总计：￥<span class="allprice">{{allprice}}</span>
 				<span class="checkdetail">查看明细></span>
 			</div>
 			<div class="box">
@@ -70,7 +69,7 @@
 					</i>
 					全选
 				</span>
-				<span class="real">实付款:<span>￥4,465.00</span></span>
+				<span class="real">实付款:<span>￥{{allprice}}</span></span>
 				<button class="play">去结算</button>
 			</div>
 		</div>
@@ -84,11 +83,25 @@
 			return {
 				date: '',
 				show: false,
+				goodsData: [],
+				yajin: [],
+				zujin: [],
+				allprice: 0
 			};
 		},
 		mounted() {
 			let data = new Date()
 			this.date = `${data.getFullYear()}-${data.getMonth() + 1}-${data.getDate()}`
+			
+			this.goodsData = this.$store.state.goodsData
+			for(let i = 0; i < this.goodsData.length; i++) {
+				this.yajin.push(this.goodsData[i].yajin)
+				this.zujin.push(this.goodsData[i].price)
+			}
+
+			console.log(this.goodsData)
+			this.Allprice()
+
 		},
 		methods: {
 			back() {
@@ -100,9 +113,44 @@
 			},
 			onConfirm(date) {
 				this.show = false;
-				console.log(this.formatDate(date))
+				//				console.log(this.formatDate(date))
 				this.date = this.formatDate(date);
-			}
+			},
+			add() {
+				this.$store.commit('add')
+				this.Allprice()
+			},
+			reduce() {
+				this.$store.commit('reduce')
+				this.Allprice()
+			},
+			Allprice() {
+				console.log(this.yajin, this.zujin)
+				let y=0;
+				let z=0;
+				if(this.goodsData.length == 1) {
+					
+					y = this.yajin[0];
+					z =  this.zujin[0];
+					
+					this.allprice = (parseInt(y) + parseInt(z))*this.$store.state.num 
+					console.log(1)
+				} else {
+					
+					console.log(2)
+					for(let i = 0; i < this.yajin.length; i++) {
+						y += parseInt(this.yajin[i])
+						console.log(parseInt(this.yajin[i]) )
+					}
+					for(let i = 0; i < this.zujin.length; i++) {
+						z += parseInt(this.yajin[i])
+					}
+					console.log(y,z)
+					this.allprice = parseInt(y) + parseInt(z)
+				}
+
+			},
+			
 		}
 	}
 </script>
@@ -135,6 +183,8 @@
 		position: fixed;
 		top: 0;
 		left: 0;
+		overflow: auto;
+		
 		.nav {
 			text-align: center;
 			height: .7rem;
@@ -160,6 +210,7 @@
 		}
 		.Goods {
 			padding: 10/100rem;
+			margin-bottom: 200/100rem;
 			.title {
 				font-size: 10px;
 				position: relative;
@@ -200,8 +251,11 @@
 						.img {
 							width: 50px;
 							height: 50px;
-							border: 1px solid aqua;
 							margin: 10/100rem 0;
+							img {
+								width: 100%;
+								height: 100%;
+							}
 						}
 						.dec {
 							width: 360/100rem;
@@ -229,7 +283,7 @@
 							.btn {
 								position: absolute;
 								bottom: 0;
-								right: -170/100rem;
+								right: -150/100rem;
 								border-radius: 5px;
 								border: 1px solid #dbdbdb;
 								span {
@@ -249,40 +303,40 @@
 		}
 	}
 	
-	.bottombox{
+	.bottombox {
 		position: fixed;
 		width: 100%;
 		bottom: 0;
 		left: 0;
 		font-size: 11px;
-		.check{
+		.check {
 			width: 100%;
 			line-height: 50/100rem;
 			background: #fff7ec;
 			text-align: center;
-			.checkdetail{
+			.checkdetail {
 				color: red;
 				margin: 0 20/100rem;
 			}
 		}
-		.box{
+		.box {
 			line-height: 100/100rem;
 			height: 100/100rem;
 			background: white;
 			position: relative;
-			.checkall{
-			 position: absolute;
-			 left: 20/100rem;
+			.checkall {
+				position: absolute;
+				left: 20/100rem;
 			}
-			.real{
+			.real {
 				position: absolute;
 				right: 220/100rem;
-				span{
+				span {
 					margin: 0 10/100rem;
 					color: red;
 				}
 			}
-			.play{
+			.play {
 				position: absolute;
 				right: 0;
 				width: 200/100rem;
@@ -293,8 +347,8 @@
 				height: 100/100rem;
 			}
 		}
-		
 	}
+	
 	.radio {
 		color: #1f9cdd;
 	}

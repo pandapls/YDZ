@@ -31,7 +31,8 @@
 		</div>
 		<lazy-component>
 			
-			<section class="content " v-for="(item,index) in Goodslist">
+	
+		<section class="content " v-for="(item,index) in Goodslist" @click="godetail(item)">
 			<div class="bleft">
 				<img :src="item.pic" />
 			</div>
@@ -44,6 +45,7 @@
 				<p class="price">￥<span>{{item.price}}</span></p>
 			</div>
 		</section>
+		
 		</lazy-component>
 	</div>
 </template>
@@ -127,6 +129,11 @@
 			},
 			moren(){
 				this.getHoneData("http://localhost:8000/" + this.$store.state.listpath);
+			},
+			godetail(val){
+				console.log(val)
+				 this.$store.state.indexpath =val.id
+				 this.$router.push({path:'/goodsdetail'})
 			}
 			
 		}

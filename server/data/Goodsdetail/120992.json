@@ -1,0 +1,190 @@
+{
+    "id": 120992,
+    "condition": 1,
+    "title": "全新 爱普生(EPSON) M205 黑白无线一体机 打印机  A4 墨仓式中的“商务仓”",
+    "subTitle": "原厂质保，一年保修（如需保修，需承租方到厂商售后服务站送修），耗材自理  </br>下单后，预计7个工作日到货",
+    "miniTitle": "M205",
+    "categoryId": 32,
+    "brandId": 9,
+    "deposit": "1800.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 77128,
+            "rentAmount": "158",
+            "totalMonth": 12,
+            "rentDesc": [
+                "租完即送",
+                "到期归承租方，不可退还"
+            ],
+            "isAssemble": false,
+            "rentTypeList": [
+                {
+                    "id": 139814,
+                    "rentTypeId": 77128,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 158,
+                    "standardRent": 158,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1583491074000,
+                    "mdate": 1583491074000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 17962,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金"
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [],
+    "softServiceTypeIds": [],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        "易点租提供整机快换服务",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2018/12/937f9a281edb1d1637e000e88138ebee.jpg\" style=\"width: 750px; height: 5699px;\" /></p>",
+    "productConfig": "<table cellpadding=\"0\" cellspacing=\"1\" class=\"fjd\" width=\"100%\">\n\t<tbody>\n\t\t<tr class=\"firstRow\">\n\t\t\t<th colspan=\"2\">主体</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">型号</td>\n\t\t\t<td>M205</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">多功能</td>\n\t\t\t<td>打印 复印 扫描</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">打印幅面</td>\n\t\t\t<td>A4 幅面</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">品牌</td>\n\t\t\t<td>爱普生 Epson</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">类型</td>\n\t\t\t<td>黑白喷墨打印机</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">扫描功能</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">扫描类型</td>\n\t\t\t<td>平板式</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">扫描分辨率</td>\n\t\t\t<td>1200x2400 dpi</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">扫描速度</td>\n\t\t\t<td>黑白 A4 300 - 1200 dpi，2.2 - 8.5 毫秒/线<br />\n\t\t\t彩色 A4 300 - 1200 dpi，7.0 - 25.4毫秒/线</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">打印功能</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">分辨率</td>\n\t\t\t<td>1440 x 720 dpi</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">打印速度</td>\n\t\t\t<td>约34 ppm</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">首页打印时间</td>\n\t\t\t<td>8秒</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">打印机语言</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">复印功能</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">复印分辨率</td>\n\t\t\t<td>1440 x 720 dpi （带有智能墨滴变换技术）</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">复印速度</td>\n\t\t\t<td>约34ppm</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">最大复印页数</td>\n\t\t\t<td>99</td>\n\t\t</tr>\n\t\t<tr>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">规格</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">电源</td>\n\t\t\t<td>AC 220-240V，50-60Hz</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">尺寸</td>\n\t\t\t<td>501&times;505&times;328mm</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">重量</td>\n\t\t\t<td>6kg</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">支持纸张尺寸</td>\n\t\t\t<td>A4，A5，A6，B5，10x15cm(4x6英寸)</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">耗电量</td>\n\t\t\t<td>10W</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th colspan=\"2\">包装清单</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">包装清单</td>\n\t\t\t<td>主机 &times; 1、电源线 &times; 1、USB线 &times; 1、保修卡 &times; 1、首先阅读 &times; 1、驱动盘 &times; 1、黑色初始化墨瓶 &times; 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"fjd_left\">&nbsp;</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+    "stock": 998,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "158.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/11/549887777d03b913a4bc5eed0de7f3a1.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/11/fe76d4865e7eaa159f0805ce8003eb1e.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/11/09fa9ab238bd03c081e44bcae89cfda2.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/11/8714f4c099040fdf1972e14cebc9bfb6.jpg"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 77128,
+            "productId": 120992,
+            "totalMonth": 12,
+            "firstRent": 158,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1583491074000,
+            "mdate": 1583491074000,
+            "productRentItemList": [
+                {
+                    "id": 139814,
+                    "rentTypeId": 77128,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 158,
+                    "standardRent": 158,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1583491074000,
+                    "mdate": 1583491074000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 17962,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 158
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 139814,
+                        "rentTypeId": 77128,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 3,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 158,
+                        "standardRent": 158,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1583491074000,
+                        "mdate": 1583491074000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 17962,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 158
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 1,
+    "presaleStock": 999,
+    "isSub": false,
+    "logicStock": 998,
+    "isHaveStock": 1,
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "limitedNum": 9996,
+    "limitedNumOriginal": 9996,
+    "packageDescribe": "主机*1/电源线*1/USB线*1/保修卡*1/首先阅读*1/驱动盘*1/黑色初始化墨瓶*1",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[17962]",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}

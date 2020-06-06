@@ -1,0 +1,444 @@
+{
+    "id": 114145,
+    "title": "无线网络部署（10~25人企业无线布网）",
+    "subTitle": "",
+    "miniTitle": "10~25人",
+    "categoryId": 87,
+    "brandId": 53,
+    "deposit": "4900.00",
+    "status": 0,
+    "rents": [
+        {
+            "payType": 1,
+            "productRentId": 75356,
+            "rentAmount": "138",
+            "totalMonth": 36,
+            "rentDesc": [
+                " 随租随还",
+                "到期归还易点租，6个月后可随时退还，未满6个月退还需缴纳服务费"
+            ],
+            "isAssemble": true,
+            "averageRent": "108",
+            "rentTypeList": [
+                {
+                    "id": 136344,
+                    "rentTypeId": 75356,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 138,
+                    "standardRent": 138,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 136345,
+                    "rentTypeId": 75356,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 108,
+                    "standardRent": 108,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                },
+                {
+                    "id": 136346,
+                    "rentTypeId": 75356,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 78,
+                    "standardRent": 78,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金",
+            "perMonthList": [
+                "1-12期：138元/月,",
+                "13-24期：108元/月,",
+                "25-36期：78元/月"
+            ]
+        },
+        {
+            "payType": 1,
+            "productRentId": 75357,
+            "rentAmount": "428",
+            "totalMonth": 12,
+            "rentDesc": [
+                "租完即送",
+                "到期归承租方，不可退还"
+            ],
+            "isAssemble": false,
+            "rentTypeList": [
+                {
+                    "id": 136347,
+                    "rentTypeId": 75357,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 428,
+                    "standardRent": 428,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {}
+                }
+            ],
+            "payTypeDes": "月租金"
+        }
+    ],
+    "tags": [],
+    "insuranceTypeIds": [],
+    "addedServiceTypeIds": [],
+    "softServiceTypeIds": [],
+    "onsiteServiceTypeIds": [],
+    "icoTags": [],
+    "serviceName": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "productProfile": "<p><img alt=\"\" src=\"https://edzimg.edianzu.com/product/2018/09/1a0b67f5fd665567c776f8b493dac679.jpg\" /></p>",
+    "stock": 998,
+    "isSale": false,
+    "salePrice": "0.00",
+    "minRentAmount": "138.00",
+    "isSendSmsToSale": false,
+    "productPicInfos": [
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/01/b510c88359dcc37918b4b97dfb803095.png"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/01/bbf37dd9862ea8c9a2099bbf5aff6c72.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/01/255664639f233a418e2a19707d5bf722.jpg"
+        },
+        {
+            "filePath": "https://edzimg.edianzu.com/product/2018/01/74fb9e861f8209d03a93f4fc6b12a88e.jpg"
+        }
+    ],
+    "productRentModel": [
+        {
+            "id": 75356,
+            "productId": 114145,
+            "totalMonth": 36,
+            "firstRent": 138,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1582794626000,
+            "mdate": 1582794626000,
+            "productRentItemList": [
+                {
+                    "id": 136344,
+                    "rentTypeId": 75356,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 138,
+                    "standardRent": 138,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 138
+                    }
+                },
+                {
+                    "id": 136345,
+                    "rentTypeId": 75356,
+                    "startMonth": 13,
+                    "endMonth": 24,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 108,
+                    "standardRent": 108,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 108
+                    }
+                },
+                {
+                    "id": 136346,
+                    "rentTypeId": 75356,
+                    "startMonth": 25,
+                    "endMonth": 36,
+                    "rentType": 1,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 78,
+                    "standardRent": 78,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 78
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 136344,
+                        "rentTypeId": 75356,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 138,
+                        "standardRent": 138,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1582794626000,
+                        "mdate": 1582794626000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12974,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 138
+                        }
+                    },
+                    {
+                        "id": 136345,
+                        "rentTypeId": 75356,
+                        "startMonth": 13,
+                        "endMonth": 24,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 108,
+                        "standardRent": 108,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1582794626000,
+                        "mdate": 1582794626000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12974,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 108
+                        }
+                    },
+                    {
+                        "id": 136346,
+                        "rentTypeId": 75356,
+                        "startMonth": 25,
+                        "endMonth": 36,
+                        "rentType": 1,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 78,
+                        "standardRent": 78,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1582794626000,
+                        "mdate": 1582794626000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12974,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 78
+                        }
+                    }
+                ]
+            },
+            "isRecommend": true,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        },
+        {
+            "id": 75357,
+            "productId": 114145,
+            "totalMonth": 12,
+            "firstRent": 428,
+            "status": 0,
+            "risk": 0,
+            "cdate": 1582794626000,
+            "mdate": 1582794626000,
+            "productRentItemList": [
+                {
+                    "id": 136347,
+                    "rentTypeId": 75357,
+                    "startMonth": 1,
+                    "endMonth": 12,
+                    "rentType": 3,
+                    "payType": 1,
+                    "payTypeDes": "月",
+                    "rent": 428,
+                    "standardRent": 428,
+                    "diffRent": 0,
+                    "status": 0,
+                    "condition": 1,
+                    "cdate": 1582794626000,
+                    "mdate": 1582794626000,
+                    "productSkuVoList": [
+                        {
+                            "skuId": 12974,
+                            "rent": -1
+                        }
+                    ],
+                    "rentMap": {
+                        "1": 428
+                    }
+                }
+            ],
+            "rentItemListMap": {
+                "1": [
+                    {
+                        "id": 136347,
+                        "rentTypeId": 75357,
+                        "startMonth": 1,
+                        "endMonth": 12,
+                        "rentType": 3,
+                        "payType": 1,
+                        "payTypeDes": "月",
+                        "rent": 428,
+                        "standardRent": 428,
+                        "diffRent": 0,
+                        "status": 0,
+                        "condition": 1,
+                        "cdate": 1582794626000,
+                        "mdate": 1582794626000,
+                        "productSkuVoList": [
+                            {
+                                "skuId": 12974,
+                                "rent": -1
+                            }
+                        ],
+                        "rentMap": {
+                            "1": 428
+                        }
+                    }
+                ]
+            },
+            "isRecommend": false,
+            "isStandardPrice": false,
+            "rentTypeDesc": ""
+        }
+    ],
+    "isPresale": 1,
+    "presaleStock": 999,
+    "isSub": false,
+    "logicStock": 998,
+    "isHaveStock": 1,
+    "payTypeList": [
+        1
+    ],
+    "isSearch": true,
+    "limitedProduct": 0,
+    "packageDescribe": "",
+    "fullInsuranceTypeId": 0,
+    "fullInsurancePrice": 0,
+    "deviceInsuranceTypeId": 0,
+    "deviceInsurancePrice": 0,
+    "timed": 0,
+    "videoDisplayLocation": "",
+    "skuIds": "[12974]",
+    "minOrderNum": 0,
+    "hasMinOrderNum": 0,
+    "sale": false,
+    "search": true,
+    "ghost": false
+}

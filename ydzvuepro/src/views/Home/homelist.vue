@@ -5,8 +5,8 @@
 					<span>{{item.htitle}}</span>
 				</div>
 				<ul class="clearfloat"  :class="index%2!=0?'event':'content'">
-					<li v-for="(zitem,zindex) in item.list" :key="zindex">
-						<router-link to="/">
+					<li v-for="(zitem,zindex) in item.list" :key="zindex" @click="getPath(zitem)">
+						<router-link to="/goodsdetail">
 							<img :src="zitem.imgSrc" />
 							<p class="name">{{zitem.name}}</p>
 							<p class="price">￥{{zitem.price}}/月</p>
@@ -42,6 +42,10 @@
 					.catch(function(e) {
 						console.log("oops! error:", e.message);
 					});
+			},
+			getPath(val){
+				console.log(val)
+				 this.$store.state.listpath =val
 			}
 		}
 	}

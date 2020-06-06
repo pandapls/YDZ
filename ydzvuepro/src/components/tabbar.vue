@@ -4,15 +4,16 @@
 			<span slot="normalImg" class="iconfont icon-shouye"></span>
 			<span slot="normalFont">首页</span>
 		</Tbchild>
+		<Tbchild mark="shopping" :currname="curr" @change="getVal">
+			<span slot="normalImg" class="iconfont icon-gouwuche"></span>
+			<span slot="normalFont">购物车</span>
+			<span slot="zero" class="zero">{{this.$store.state.goodsData.length}}</span>
+		</Tbchild>
 		<Tbchild mark="category" :currname="curr" @change="getVal">
 			<span slot="normalImg" class="iconfont icon-fenlei"></span>
 			<span slot="normalFont">分类</span>
 		</Tbchild>
-		<Tbchild mark="shopping" :currname="curr" @change="getVal">
-			<span slot="normalImg" class="iconfont icon-gouwuche"></span>
-			<span slot="normalFont">购物车</span>
-			<span slot="zero" class="zero">0</span>
-		</Tbchild>
+		
 		<Tbchild mark="mine" :currname="curr" @change="getVal">
 			<span slot="normalImg" class="iconfont icon-wode"></span>
 			<span slot="normalFont">我的</span>
