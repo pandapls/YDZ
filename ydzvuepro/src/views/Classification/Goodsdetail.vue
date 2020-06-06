@@ -40,19 +40,51 @@
             </div>
 
             <!-- 已选商品 -->
-            <div class="selectProduct">
+            <div class="selectProduct" @click="shangpSumbit">
               <span>已选商品</span> &nbsp;i3-7020U/4G/128GSSD/核显1件 可选服务
               <span class="shenluo">···</span>
             </div>
+
             <!-- 租赁方式 -->
-            <div class="rent">
-              <div>
-                <span>租赁方式</span> &nbsp;月租金
-                <span class="redFont">￥89</span>，租期
-                <span class="redFont">36</span>个月&nbsp;
-                <van-tag color="#ffac13" text-color="white">随租随还</van-tag>
-                <span class="shenluo">···</span>
-              </div>
+            <div class="rent" v-for="(it,ie) in rents" :key="ie">
+              <van-cell is-link @click="showPopup1">
+                <div>
+                  <span>租赁方式</span>
+                  &nbsp;{{it.payTypeDes}}
+                  <span class="redFont">￥{{it.rentAmount}}</span>，租期
+                  <span class="redFont">{{it.totalMonth}}</span>个月&nbsp;
+                  <van-tag color="#ffac13" text-color="white">{{it.rentDesc[0]}}</van-tag>
+                </div>
+              </van-cell>
+              <van-popup v-model="showPopup" position="bottom" :style="{ height: '50%' }">
+                <div class="rent_al">
+                  <h4>
+                    租赁方式
+                    <span>
+                      <van-icon name="cross" @click="showPopup=false" size="20" />
+                    </span>
+                  </h4>
+                  <p class="zupin">
+                    <van-icon id="gou" name="passed" size="20" color="#eb283c" />
+                    &nbsp;{{it.payTypeDes}}
+                    <span>￥{{it.rentAmount}}</span>，租期36个月
+                    <van-tag color="#ffac13" text-color="white">{{it.rentDesc[0]}}</van-tag>
+                  </p>
+                  <div class="rent_detail">
+                    <div class="rent-left fl">{{it.rentDesc[0]}}：</div>
+                    <div class="rent-right">
+                      {{it.perMonthList[0]}}
+                      <br />
+                      {{it.perMonthList[1]}}
+                      <br />
+                      {{it.perMonthList[2]}}
+                      <br />
+                      {{it.rentDesc[1]}}
+                    </div>
+                  </div>
+                </div>
+              </van-popup>
+
               <div class="byStages">
                 <p>
                   <van-tag color="#f2826a" plain>1-12期</van-tag>&nbsp;89元/月
@@ -64,7 +96,7 @@
                   <van-tag color="#f2826a" plain>25-36期</van-tag>&nbsp;69元/月
                 </p>
                 <!-- 到期说明 -->
-                <p class="mature">到期归还易点租，6个月后课随时退还，未满6个月还需缴纳服务费</p>
+                <p class="mature">{{it.rentDesc[1]}}</p>
               </div>
             </div>
           </div>
@@ -84,27 +116,69 @@
       </van-tabs>
     </div>
 
-  <div class="dubtabbar">
-     <Tabber/>
-  </div>
+    <div class="dubtabbar">
+      <Tabber />
+    </div>
+
+    <!-- 商品规格 -->
+    <div class="sku">
+      <van-sku
+        v-model="showsku"
+        :sku="sku"
+        :show-add-cart-btn="false"
+        buy-text="加入购物车  "
+        :goods="goods"
+        @addcart="onAddCartClicked"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import Tabber from './componets/detailtabbar'
-
+import Tabber from "./componets/detailtabbar";
+let sku = {
+  // 所有sku规格类目与其值的从属关系，比如商品有颜色和尺码两大类规格，颜色下面又有红色和蓝色两个规格值。
+  // 可以理解为一个商品可以有多个规格类目，一个规格类目下可以有多个规格值。
+  tree: [
+    {
+      k: "配置：", // skuKeyName：规格类目名称
+      v: [
+        {
+          id: "30349", // skuValueId：规格值 id
+          name: "红色" // skuValueName：规格值名称
+        }
+      ],
+      k_s: "s-1" // skuKeyStr：sku 组合列表（下方 list）中当前类目对应的 key 值，value 值会是从属于当前类目的一个规格值 id
+    }
+  ],
+  // 所有 sku 的组合列表，比如红色、M 码为一个 sku 组合，红色、S 码为另一个组合
+  list: [{}],
+  price: "1.00", // 默认价格（单位元）
+  stock_num: 50,
+  collection_id: 2261, // 无规格商品 skuId 取 collection_id，否则取所选 sku 组合对应的 id
+  none_sku: false // 是否无规格商品
+};
 export default {
   data() {
     return {
       active: 0,
+      showPopup: true,
       msg: [],
       title: "",
       productProfile: "",
       canshu: "",
-      qingDan: ""
+      qingDan: "",
+      rents: [],
+      showsku: false,
+      sku: sku,
+      goods: {
+        // 默认商品 sku 缩略图
+        title: "",
+        picture: "https://img.yzcdn.cn/1.jpg"
+      }
     };
   },
-  components: {Tabber},
+  components: { Tabber },
 
   mounted: function() {
     this.getHoneData("http://localhost:8000/121171");
@@ -115,11 +189,19 @@ export default {
         .then(res => res.json())
         .then(data => {
           console.log(data);
+          console.log(data.productPicInfos[0], data.title);
           this.msg = data;
           this.title = data.title;
           this.productProfile = data.productProfile;
           this.canshu = data.productConfig;
           this.qingDan = data.packageDescribe;
+          this.rents = data.rents;
+          this.goods.picture = data.productPicInfos[0].filePath;
+          this.goods.title = data.title;
+          this.sku.price = data.minRentAmount + "/月";
+          this.sku.stock_num = data.limitedNum;
+          this.sku.list[0].stock_num = data.limitedNum;
+          this.sku.tree[0].v[0].name = data.miniTitle;
         })
         .catch(function(e) {
           console.log("oops! error:", e.message);
@@ -128,28 +210,37 @@ export default {
     back() {
       this.$router.go(-1); //返回上一层
     },
-     onClickIcon() {
-      Toast('点击图标');
+    shangpSumbit() {
+      this.showsku = true;
     },
-    onClickButton() {
-      Toast('点击按钮');
+    // 立即提交
+    onAddCartClicked() {
+      this.showsku = false;
     },
+    showPopup1() {
+      this.showPopup = true;
+    }
   }
 };
 </script>
 
 <style lang="less" scoped>
-
 * {
   margin: 0;
   padding: 0;
 }
-.dubtabbar{
-  height: 80/100rem;
-  z-index: 1000001;
-}
 
+.dubtabbar {
+  height: 80/100rem;
+  z-index: 1002;
+}
+.fl {
+  float: left;
+}
 .goodsdetail_box {
+  .sku {
+    width: 95%;
+  }
   .goodsdetail_content {
     width: 100%;
 
@@ -275,6 +366,35 @@ export default {
     width: 200/100rem;
     text-align: right;
     background: #f5fafe;
+  }
+}
+.rent_al {
+  width: 90%;
+  padding: 15/100rem;
+  .rent_detail {
+    border: 1px solid #eb283c;
+    color: #eb283c;
+    padding: 15/100rem;
+    margin-top: 15/100rem;
+    .rent-left {
+      height: 200/100rem;
+    }
+  }
+  h4 {
+    text-align: center;
+    font-size: 25/100rem;
+    span {
+      float: right;
+    }
+  }
+  .zupin {
+    margin-top: 10/100rem;
+    span {
+      color: #eb283c !important;
+    }
+    #gou {
+      vertical-align: -5/100rem;
+    }
   }
 }
 .qindan {

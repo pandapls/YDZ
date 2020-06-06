@@ -94,9 +94,6 @@ app.get('/homeHot',(req,res)=>{
     let data =require('./data/Goodsdetail/121171.json')
      res.send(data);
  })
-<<<<<<< HEAD
- 
-=======
  app.get('/115892',(req,res)=>{
     let data =require('./data/Goodsdetail/115892.json')
      res.send(data);
@@ -114,7 +111,7 @@ app.get('/homeHot',(req,res)=>{
      res.send(data);
  })
 
->>>>>>> d0745bd2a48ffc66139540fc3e3174fb6cae6761
+
 
 
 // app.use(bodyParser.urlencoded({extended:false}))

@@ -51,7 +51,7 @@
 		left: 0;
 		font-size: 10px;
 		background: white;
-		z-index: 10000;
+		z-index: 1000;
 		.zero{
 			display: inline-block;
 			width: 30/100rem;

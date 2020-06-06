@@ -63,7 +63,7 @@
 		left: 0;
 		font-size: 10px;
 		background: white;
-		z-index: 100002;
+		z-index: 1005;
 		.zero{
 			display: inline-block;
 			width: 30/100rem;
