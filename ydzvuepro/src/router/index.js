@@ -10,6 +10,8 @@ import Havedata from '../views/Shopping/havedata.vue'
 import Address from '../components/myaddress.vue'
 import AddMyress from '../components/addmyress.vue'
 import Comfirm from '../views/Shopping/comfirm.vue'
+import Login from '../views/Login/login.vue'
+import Register from '../views/Login/register.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -55,6 +57,18 @@ const routes = [{
 		component: Havedata
 	},
 	
+	{
+	    path: '/login',
+	    name: 'login',
+	    component: Login
+  	},
+  	
+  	{
+	    path: '/register',
+	    name: 'register',
+	    component: Register
+	},
+
 	{
 		path:'/comfirm',
 		name:'comfirm',
