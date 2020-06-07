@@ -1,9 +1,9 @@
 <template>
 	<div class="nav animate__animated animate__zoomIn">
 		<div class="navbox">
-			<div class="active" @click="moren">默认排行</div>
-			<div @click="changeSell">销量</div>
-			<div @click="changePri">价格</div>
+			<div  @click="moren" :class="{active:index==1}" >默认排行</div>
+			<div @click="changeSell" :class="{active:index==2}">销量</div>
+			<div @click="changePri" :class="{active:index==3}">价格</div>
 			<div class="active" @click="showRight">
 					筛选
 			</div>
@@ -63,7 +63,8 @@
 				jug:0,
 				jug2:false,
 				num:0,
-				ani:'animate__fadeInRight'
+				ani:'animate__fadeInRight',
+				index:1
 			}
 		},
 		
@@ -116,18 +117,21 @@
 				this.ani ="animate__fadeOutRight"
 			},
 			changeSell(){
+				this.index = 2
 				function sortRule(a,b){
 					return a.saleCount - b.saleCount
 				}
 				console.log('chang',this.Goodslist.sort(sortRule))
 			},
 			changePri(){
+				this.index =3
 				function sortRule(a,b){
 					return parseInt( a.price ) - parseInt(b.price)
 				}
 				console.log('chang',this.Goodslist.sort(sortRule))
 			},
 			moren(){
+				this.index = 1
 				this.getHoneData("http://localhost:8000/" + this.$store.state.listpath);
 			},
 			godetail(val){

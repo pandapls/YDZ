@@ -4,24 +4,18 @@
 			<span slot="normalImg" class="iconfont icon-shouye"></span>
 			<span slot="normalFont">首页</span>
 		</Tbchild>
+		
 		<Tbchild mark="shopping" :currname="curr" @change="getVal">
 			<span slot="normalImg" class="iconfont icon-gouwuche"></span>
 			<span slot="normalFont">购物车</span>
-			<span slot="zero" class="zero">{{this.$store.state.goodsData.length}}</span>
+			<span slot="zero" class="zero">0</span>
 		</Tbchild>
-		<Tbchild mark="category" :currname="curr" @change="getVal">
-			<span slot="normalImg" class="iconfont icon-fenlei"></span>
-			<span slot="normalFont">分类</span>
-		</Tbchild>
-		
-		<Tbchild mark="mine" :currname="curr" @change="getVal">
-			<span slot="normalImg" class="iconfont icon-wode"></span>
-			<span slot="normalFont">我的</span>
-		</Tbchild>
+		<div class="shoppcat">加入购物车</div>
+		<div class="jilixiadan">立即下单</div>
 	</div>
 </template>
 <script>
-	import Tbchild from './tbchild'
+	import Tbchild from './detailtabbartbchild'
 	export default {
 		name: "tabbar",
 		data:function(){
@@ -32,18 +26,8 @@
 		methods:{
 			getVal(val){
 				this.curr=val;
-				
-				if(this.curr =="shopping"){
-					if(this.$store.state.goodsData.length>0){
-						this.$router.push('/havedata')
-					}else{
-						this.$router.push('/shopping')
-					}
-				}else{
-					this.$router.push('/'+this.curr)
-				}
-			},
-			
+				this.$router.push('/'+this.curr)
+			}
 		},
 		components: {
 			Tbchild
@@ -51,8 +35,25 @@
 	}
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 	.tabbar {
+		.shoppcat{
+			background: #48aeff;
+			text-align: center;
+			font-size: 28/100rem;
+			line-height: 70/100rem;
+			width: 25%;
+			color: #fff;
+		}
+		.jilixiadan{
+			background: #f5615a;
+			color: #fff;
+			font-size: 28/100rem;
+			line-height: 70/100rem;
+			text-align: center;
+			width: 25%;
+		}
+		
 		width: 100%;
 		display: flex;
 		border-top:1px solid #efefef;
@@ -62,7 +63,7 @@
 		left: 0;
 		font-size: 10px;
 		background: white;
-		z-index: 1000;
+		z-index: 1005;
 		.zero{
 			display: inline-block;
 			width: 30/100rem;

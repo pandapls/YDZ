@@ -7,30 +7,30 @@
 			<form>
 				<div>
 					收货人：</br>
-					<input type="text" />
+					<input type="text" v-model="username"/>
 				</div>
 				<div>
 					联系电话：</br>
-					<input type="text" />
+					<input type="text" v-model="Phone"/>
 				</div>
 				<div>
 					所在地区：</br>
-					<select class="select">
-						<option value="请选择省份">请选择省份</option>
+					<select class="select"   v-model="selectProvices" >
+						<option :value="op.id" v-for="op in Provices">{{op.name}}</option>
 					</select>
-					<select class="select">
-						<option value="请选择城市">请选择城市</option>
+					<select class="select"   v-model="selecCity" >
+						<option :value="op.id" v-for="op in city">{{op.name}}</option>
 					</select>
-					<select class="select">
-						<option value="请选择区县">请选择区县</option>
+					<select class="select"   v-model="selecqu">
+						<option :value="op.id" v-for="op in qu">{{op.name}}</option>
 					</select>
 				</div>
 				<div>
 					详细地址：</br>
-					<input type="text" placeholder="详细地址" />
+					<input type="text" placeholder="详细地址" v-model="address"/>
 				</div>
 				<div>
-					<button>保存</button>
+					<button @click="btn">保存</button>
 				</div>
 			</form>
 		</div>
@@ -40,10 +40,73 @@
 <script>
 	export default {
 		name: "shopping",
+		data:function(){
+			return {
+				username:'',
+				Phone:'',
+				Provices:[
+					{
+						id:'广东省',
+						name:'广东省'
+					}
+				],
+				city:[
+					{
+						id:'深圳市',
+						name:'深圳市'
+					}
+				],
+				qu:[
+					{
+						id:'龙岗区',
+						name:'龙岗区'
+					},
+					{
+						id:'南山区',
+						name:'南山区'
+					},
+					{
+						id:'福田区',
+						name:'福田区'
+					},{
+						id:'罗湖区',
+						name:'罗湖区'
+					},{
+						id:'宝安区',
+						name:'宝安区'
+					}
+				],
+				address:''
+				
+			}
+		},
+		 created(){
+　　　　　　//如果没有这句代码，select中初始化会是空白的，默认选中就无法实现
+            this.selectProvices = this.Provices[0].id;
+            this.selecCity = this.city[0].id;
+            this.selecqu = this.qu[0].id;
+            
+            
+        },
 		methods: {
 			back() {
 				this.$router.go(-1)
-			}
+			},
+			btn(){
+				
+				console.log(this.username,this.Phone,this.selectProvices,this.selecCity,this.selecqu)
+				let address = {
+					username:this.username,
+					phone:this.Phone,
+					dizhi:this.selectProvices+this.selecCity+this.selecqu,
+					xiangxidizhi:this.address,
+					nowCheck:false
+				}
+				this.$store.state.address.push(address)
+				console.log(address)
+				this.$router.push('/comfirm/address')
+			},
+			
 		}
 	}
 </script>

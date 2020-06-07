@@ -14,12 +14,12 @@
 					
 				</i> 租凭商品
 			</div>
-			<div class="item" v-for="(item,index) in goodsData">
+			<div class="item" v-for="(item,index) in updata">
 				<mt-cell-swipe :right="[
 			    {
 			      content: '删除',
 			      style: { background: 'red', color: '#fff' },
-			      handler: () => this.$messagebox('delete')
+			      handler: () => deleteCell(item,index)
 			    }
 			  ]">
 					<template #title>
@@ -39,9 +39,9 @@
 									<p>押金：<span class="yajing">￥{{item.yajin}}</span></p>
 									<p>租金：<span class="price">￥{{item.price}}/月</span>首付期款：1/36</p>
 									<div class="btn">
-										<span class="reduce" @click="reduce">-</span>
-										<span class="num">{{$store.state.num}}</span>
-										<span class="add" @click="add">+</span>
+										<span class="reduce" @click="reduce(index)">-</span>
+										<span class="num">{{item.num}}</span>
+										<span class="add" @click="add(index)">+</span>
 									</div>
 								</div>
 							</div>
@@ -69,8 +69,8 @@
 					</i>
 					全选
 				</span>
-				<span class="real">实付款:<span>￥{{allprice}}</span></span>
-				<button class="play">去结算</button>
+				<span class="real">实付款:<span>￥{{allprice }}</span></span>
+				<button class="play" @click="gotocomfirm">去结算</button>
 			</div>
 		</div>
 	</div>
@@ -92,16 +92,18 @@
 		mounted() {
 			let data = new Date()
 			this.date = `${data.getFullYear()}-${data.getMonth() + 1}-${data.getDate()}`
-			
 			this.goodsData = this.$store.state.goodsData
 			for(let i = 0; i < this.goodsData.length; i++) {
 				this.yajin.push(this.goodsData[i].yajin)
 				this.zujin.push(this.goodsData[i].price)
 			}
+		},
+		computed:{
+			updata(){
+				this.Allprice();
+				 return this.$store.state.goodsData
 
-			console.log(this.goodsData)
-			this.Allprice()
-
+			}
 		},
 		methods: {
 			back() {
@@ -113,31 +115,32 @@
 			},
 			onConfirm(date) {
 				this.show = false;
-				//				console.log(this.formatDate(date))
 				this.date = this.formatDate(date);
 			},
-			add() {
-				this.$store.commit('add')
+			add(index) {
+				this.goodsData[index].num++
+				console.log(this.goodsData)
+				
 				this.Allprice()
 			},
-			reduce() {
-				this.$store.commit('reduce')
+			reduce(index) {
+					if(this.goodsData[index].num <=1){
+						this.goodsData[index].num++
+					}else{
+						this.goodsData[index].num--;
+					}
 				this.Allprice()
 			},
 			Allprice() {
-				console.log(this.yajin, this.zujin)
 				let y=0;
 				let z=0;
 				if(this.goodsData.length == 1) {
-					
 					y = this.yajin[0];
 					z =  this.zujin[0];
-					
-					this.allprice = (parseInt(y) + parseInt(z))*this.$store.state.num 
-					console.log(1)
-				} else {
-					
-					console.log(2)
+					this.allprice = (parseInt(y) + parseInt(z))*this.goodsData[0].num 
+				} else if(this.goodsData.length == 0){
+					this.allprice=0	
+				}else{
 					for(let i = 0; i < this.yajin.length; i++) {
 						y += parseInt(this.yajin[i])
 						console.log(parseInt(this.yajin[i]) )
@@ -145,11 +148,26 @@
 					for(let i = 0; i < this.zujin.length; i++) {
 						z += parseInt(this.yajin[i])
 					}
-					console.log(y,z)
 					this.allprice = parseInt(y) + parseInt(z)
 				}
-
 			},
+			deleteCell(val,index){
+				console.log(val,index)
+				let goods = this.$store.state.goodsData.filter((item,index)=>{
+				    return item.title != val.title
+				});
+				
+				this.$store.state.goodsData = goods
+				this.goodsData =goods
+				if(this.goodsData.length ==0){
+					console.log(4)
+					this.allprice=0
+					this.$router.push('/shopping')
+				}
+			},
+			gotocomfirm(){
+				this.$router.push('/comfirm')
+			}
 			
 		}
 	}

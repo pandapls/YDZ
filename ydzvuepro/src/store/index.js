@@ -9,7 +9,7 @@ export default new Vuex.Store({
 		indexpath: '124713',
 		goodsData: [],
 		data: {},
-		num:1
+		address:[]
 	},
 	getters: {
 
@@ -23,13 +23,7 @@ export default new Vuex.Store({
 			state.num = data.num 
 			// 改进方法是把token值储存在sessionStorage（会话信息）中，特点是当浏览器关闭时，会话信息会清除掉，增强token的保密性；
 			sessionStorage.setItem("data", state.goodsData);
-
-		},
-		add(state) {
-			state.num++;
-		},
-		reduce(state) {
-			state.num--;
+			sessionStorage.setItem("address", state.address);
 		}
 	},
 	actions: {},

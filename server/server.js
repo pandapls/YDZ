@@ -155,6 +155,10 @@ app.get('/homeHot',(req,res)=>{
      res.send(data);
  })
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d487668993c3a88518adb7fa3a5e53091335e0ac
 
 
 // app.use(bodyParser.urlencoded({extended:false}))

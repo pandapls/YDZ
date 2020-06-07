@@ -44,7 +44,7 @@
 			},
 			getHoneData(value) {
 				console.log('https://so.edianzu.com/sug?time=1591193658488&code=92364863cd67fa7cba7daa8b7570c5dd&plat=2&q='+value)
-					 fetch('https://so.edianzu.com/sug?time=1591193658488&code=92364863cd67fa7cba7daa8b7570c5dd&plat=2&q='+value)
+					 fetch('https://so.edianzu.com/sug?time=1591454223802&code=1c3891debdc1d332bb0b8f4464090969&plat=2&q='+value)
 					.then(res => res.json())
 					.then(data => {
 						console.log(data.data);

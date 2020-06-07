@@ -7,7 +7,7 @@
 			<div class="noshop">
 				<span class="iconfont icon-gouwuche"></span>
 				<p>购物车里是空的</p>
-				<span class="gotoshop">去逛逛</span>
+				<span class="gotoshop" @click="gotoshop">去逛逛</span>
 			</div>
 		</div>
 	</div>
@@ -19,6 +19,9 @@ export default{
 	methods:{
 		back(){
 			this.$router.go(-1)
+		},
+		gotoshop(){
+			this.$router.push('/home')
 		}
 	}
 }

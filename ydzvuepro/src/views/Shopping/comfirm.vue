@@ -9,11 +9,18 @@
 				<p>请选择收获地址</p>
 				<i class="icon"><van-icon name="arrow" /></i>
 			</div>
+			<div class="address " id="hava" @click="goaddress" v-show="isshow">
+				<p >
+					{{address.username}}&nbsp;{{address.phone}}
+					<span>{{address.xiangxidizhi}}</span>
+				</p>
+				<i class="icon"><van-icon name="arrow" /></i>
+			</div>
 			<div class="goodshow">
 				<p class="tlt">
 					租凭商品
 				</p>
-				<div class="item">
+				<div class="item clearfloat">
 					<div class="content" v-for="item,index in goods">
 						<div class="img">
 							<img :src="item.imgSrc" />
@@ -23,7 +30,7 @@
 							<p class="scr">本商品租期为<span>36</span>个月，租期结束后设备归还易点租</p>
 						</div>
 						<div class="bottom">
-							<p class="yajin">押金：<span>￥3400</span><span class="num">×1</span></p>
+							<p class="yajin">押金：<span>￥{{item.yajin}}</span><span class="num">×{{item.num}}</span></p>
 							<p class="check">
 								<i class="radio-box select-all" @click="check2 = !check2">
 								<van-icon name="circle" class="radio" v-show="check2"/>
@@ -32,7 +39,7 @@
 								<span>租金从押金扣</span>
 								<i><van-icon name="question-o" /></i>
 							</p>
-							<p class="zujin">租金：<span>￥135/月</span> (首付期数：1/36)</p>
+							<p class="zujin">租金：<span>￥{{item.price}}/月</span> (首付期数：1/36)</p>
 							<p class="time">起始日期：2020-06-09</p>
 						</div>
 					</div>
@@ -62,24 +69,24 @@
 				</div>
 			</div>
 			<div class="pricebox">
-				<p>应付押金<span>￥1000</span></p>
-				<p>应付租金<span>￥75</span></p>
+				<p>应付押金<span>￥{{allyajin}}</span></p>
+				<p>应付租金<span>￥{{allzujin}}</span></p>
 				<p>免押金抵扣<span class="red">-￥0</span></p>
 				<p>增值保障<span>￥0</span></p>
-				<p class="all">应付总计<span>￥1975.00</span></p>
-				<p>当前需付<span class="red big">￥1975.00</span></p>
+				<p class="all">应付总计<span>￥{{allprice}}</span></p>
+				<p>当前需付<span class="red big">￥{{allprice}}</span></p>
 			</div>
 			<div class="xieyi">
 				<p>我已经阅读并同意
 					<a href="/">《易点租租凭服务协议》</a>
 
 					<i class="radio-box select-all" @click="change">
-					<van-icon name="circle" class="radio" v-show="isCheck"/>
-					<van-icon name="passed"  class="radio radio-check" v-show="!isCheck"/>	
+					<van-icon name="circle" class="radio" v-show="!isCheck"/>
+					<van-icon name="passed"  class="radio radio-check" v-show="isCheck"/>	
 				</i>
 				</p>
 			</div>
-
+			<button class="btn" @click="submit">提交订单</button>
 		</div>
 	</div>
 
@@ -94,11 +101,28 @@
 				isCheck: true,
 				check: true,
 				check2: true,
+				yajin: [],
+				zujin: [],
+				allyajin: 0,
+				allzujin: 0,
+				allprice: 0,
+				address: {},
+				isshow: false
 			}
 		},
 		mounted() {
 			this.goods = this.$store.state.goodsData
 			console.log(this.goods)
+			for(let i = 0; i < this.goods.length; i++) {
+				this.yajin.push(this.goods[i].yajin)
+				this.zujin.push(this.goods[i].price)
+			}
+			this.Allprice()
+			console.log(this.$store.state.goodsData)
+			this.getaddress()
+		},
+		computed: {
+
 		},
 		methods: {
 			change() {
@@ -106,12 +130,59 @@
 			},
 			goaddress() {
 				this.$router.push('/comfirm/address')
-//				this.isShow = true
+				//				this.isShow = true
 			},
-			back(){
+			back() {
 				this.$router.push('/goodsdetail')
+			},
+			Allprice() {
+				console.log(this.yajin, this.zujin)
+				let y = 0;
+				let z = 0;
+				if(this.goods.length == 1) {
+					y = this.yajin[0];
+					z = this.zujin[0];
+					this.allyajin = y
+					this.allzujin = z
+					this.allprice = (parseInt(y) + parseInt(z)) * this.$store.state.num
+					console.log(this.allyajin)
+				} else {
+
+					console.log(2)
+					for(let i = 0; i < this.yajin.length; i++) {
+						y += parseInt(this.yajin[i])
+						this.allyajin = y
+						console.log(parseInt(this.yajin[i]))
+					}
+					for(let i = 0; i < this.zujin.length; i++) {
+						z += parseInt(this.zujin[i])
+						this.allzujin = z
+
+					}
+					console.log(y, z)
+					this.allprice = parseInt(y) + parseInt(z)
+				}
+
+			},
+			submit() {
+				console.log("提交")
+				this.$toast('提交成功');
+			},
+			getaddress() {
+
+				let arr = []
+				if(this.$store.state.address.length > 0) {
+					arr = this.$store.state.address.filter((item) => {
+						return item.nowCheck == true
+					})
+					console.log(arr)
+					this.address = arr[0]
+					this.isshow = true
+					Vue.$set(this.isshow,)
+				}
+				//				console.log(this.address)
 			}
-		},
+		}
 
 	}
 </script>
@@ -133,6 +204,16 @@
 				float: left;
 				margin-left: .2rem;
 				color: #929292;
+			}
+		}
+		#hava {
+			position: fixed;
+			top: 60/100rem;
+			width: 95%;
+			span {
+				position: absolute;
+				bottom: -40/100rem;
+				left: 20/100rem;
 			}
 		}
 		.address {
@@ -159,12 +240,12 @@
 				color: #a1a6a8;
 			}
 			.item {
-				height: 400/100rem;
 				.time {
 					font-size: 12px;
 				}
 				.content {
 					height: 250/100rem;
+					/*padding:5/100rem 0;*/
 					width: 100%;
 					position: relative;
 					>div {
@@ -210,6 +291,7 @@
 					}
 					.bottom {
 						width: 100%;
+						margin-bottom: 50/100rem;
 						.yajin {
 							font-size: 12px;
 							color: #777e82;
@@ -337,5 +419,24 @@
 				color: #37a3ff;
 			}
 		}
+		.btn {
+			background: #37a3ff;
+			width: 80%;
+			height: 60/100rem;
+			margin: 10/100rem 60/100rem;
+			border: none;
+			border-radius: 115px;
+			color: white;
+			font-size: 12px;
+		}
+	}
+	/*清除浮动*/
+	
+	.clearfloat:after {
+		display: block;
+		clear: both;
+		content: "";
+		visibility: hidden;
+		height: 0
 	}
 </style>
