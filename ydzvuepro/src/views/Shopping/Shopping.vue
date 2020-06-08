@@ -22,6 +22,14 @@ export default{
 		},
 		gotoshop(){
 			this.$router.push('/home')
+		},
+		
+	},
+	beforeMount(){
+		if(this.$store.state.loginstatus){
+			this.$router.push("/shopping")
+		}else{
+			this.$router.push("/login")
 		}
 	}
 }

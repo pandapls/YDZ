@@ -204,23 +204,34 @@
 				this.showsku = false;
 			},
 			getGoods() {
-				this.goodsdata = {
+				if(!this.$store.state.loginstatus){
+					console.log(1)
+					this.$router.push('/login')
+				}else{
+					this.goodsdata = {
 					title: this.title,
 					price: this.msg.minRentAmount,
 					yajin: this.msg.deposit,
 					imgSrc: this.msg.productPicInfos[0].filePath,
-					num: this.num
+					num: this.num,
+					Checkstate:true
+					}
+					let arr = [];
+					this.$store.commit("setData", this.goodsdata);
+					console.log(this.$store.state.goodsData)
 				}
-				let arr = [];
-				this.$store.commit("setData", this.goodsdata);
-				console.log(this.$store.state.goodsData)
+				
 			},
 			showPopup1() {
 						this.showPopup = true;
 			},
 			goComfirm(){
-				this.$router.push('/comfirm')
-				this.getGoods()
+				if(this.$store.state.loginstatus=""){
+					this.$router.push('/login')
+				}else{
+					this.$router.push('/comfirm')
+					this.getGoods()
+				}
 			}
 		}
 	}

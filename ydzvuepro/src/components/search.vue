@@ -3,7 +3,7 @@
 		<form action="/">
 			<van-search shape="round" show-action :background="bgcolor" placeholder="免押金租电脑" @search="onSearch"  @focus="onfocus" >
 				  <template #action>
-				    <div @click="onSearch" class="login" v-show="true">{{login}}</div>
+				    <div @click="onSearch" class="login" v-show="true" >{{login}}</div>
 				  </template>
 			</van-search> 
 		</form>
@@ -31,10 +31,11 @@
 		},
 		methods: {
 			onSearch(val) {
-				console.log("login")
+				this.$router.push("/login")
 			},
 			onfocus(){
 				this.jug = true
+				
 			},
 			oncancel(){
 				this.jug = false
@@ -44,7 +45,7 @@
 			},
 			getHoneData(value) {
 				console.log('https://so.edianzu.com/sug?time=1591193658488&code=92364863cd67fa7cba7daa8b7570c5dd&plat=2&q='+value)
-					 fetch('https://so.edianzu.com/sug?time=1591454223802&code=1c3891debdc1d332bb0b8f4464090969&plat=2&q='+value)
+					 fetch('https://so.edianzu.com/sug?time=1591580530666&code=dff1985e68e4391efff1009bc78e07f8&plat=2&q='+value)
 					.then(res => res.json())
 					.then(data => {
 						console.log(data.data);

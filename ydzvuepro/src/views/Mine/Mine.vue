@@ -4,7 +4,7 @@
 			<span @click="back"><van-icon name="arrow-left" /></span> 个人中心
 		</div>
 		<div class="methods">
-			13691840441
+			{{this.$store.state.loginphone}}
 			<span><van-icon name="arrow" /></span>
 		</div>
 		<div class="order">
@@ -68,7 +68,14 @@
     		onAddress(){
     			this.$router.push('/address')
     		}
-    	}
+    	},
+    	beforeMount(){
+		if(this.$store.state.loginstatus){
+			return
+		}else{
+			this.$router.push("/login")
+		}
+	}
     }
 </script>
 

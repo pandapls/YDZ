@@ -155,11 +155,6 @@ app.get('/homeHot',(req,res)=>{
      res.send(data);
  })
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d487668993c3a88518adb7fa3a5e53091335e0ac
-
 
 // app.use(bodyParser.urlencoded({extended:false}))
 // //返回的对象是一个键值对，当extended为false的时候，键值对中的值就为'String'或'Array'形式，为true的时候，则可为任何数据类型。

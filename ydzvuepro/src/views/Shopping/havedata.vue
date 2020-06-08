@@ -9,7 +9,7 @@
 		<div class="Goods">
 			<div class="title">
 				<i class="radio-box select-all">
-					<van-icon name="circle" class="radio" v-show="false"/>
+					<van-icon name="circle" class="radio" v-show="false" />
 					<van-icon name="passed"  class="radio radio-check"/>
 					
 				</i> 租凭商品
@@ -24,10 +24,10 @@
 			  ]">
 					<template #title>
 						<div class="itemSlide">
-							<i class="radio-box">
-						<van-icon name="circle" class="radio" v-show="false"/>
-						<van-icon name="passed"  class="radio radio-check"/>
-					</i>
+							<i class="radio-box" @click="setSelet(item)">
+								<van-icon name="circle" class="radio"  v-show="!item.Checkstate"/>
+								<van-icon name="passed"  class="radio radio-check" v-show="item.Checkstate"/>
+							</i>
 							<div class="content">
 								<div class="img">
 									<img :src="item.imgSrc" />
@@ -39,9 +39,9 @@
 									<p>押金：<span class="yajing">￥{{item.yajin}}</span></p>
 									<p>租金：<span class="price">￥{{item.price}}/月</span>首付期款：1/36</p>
 									<div class="btn">
-										<span class="reduce" @click="reduce(index)">-</span>
+										<span class="reduce" @click="changeMoney(item,-1)">-</span>
 										<span class="num">{{item.num}}</span>
-										<span class="add" @click="add(index)">+</span>
+										<span class="add" @click="changeMoney(item,1)">+</span>
 									</div>
 								</div>
 							</div>
@@ -63,9 +63,9 @@
 			</div>
 			<div class="box">
 				<span class="checkall">
-					<i class="radio-box select-all">
-						<van-icon name="circle" class="radio" v-show="false"/>
-						<van-icon name="passed"  class="radio radio-check"/>	
+					<i class="radio-box select-all"  @click="checkAll">
+						<van-icon name="circle" class="radio" v-show="!checkAllFlag"/>
+						<van-icon name="passed"  class="radio radio-check" v-show="checkAllFlag"/>	
 					</i>
 					全选
 				</span>
@@ -86,7 +86,12 @@
 				goodsData: [],
 				yajin: [],
 				zujin: [],
-				allprice: 0
+				allpricearr:[],
+				allprice: 0,
+				isshow: true,
+				checkAllFlag: true,
+				circle: 'circle',
+				passed: 'passed'
 			};
 		},
 		mounted() {
@@ -97,15 +102,54 @@
 				this.yajin.push(this.goodsData[i].yajin)
 				this.zujin.push(this.goodsData[i].price)
 			}
+			this.Allprice()
 		},
-		computed:{
-			updata(){
-				this.Allprice();
-				 return this.$store.state.goodsData
+		computed: {
+			updata() {
+				return this.$store.state.goodsData
 
 			}
 		},
 		methods: {
+			setSelet(item) {
+				let num = 0;
+				// 注意对比前后两次输出的结果
+				console.log(item.check);
+				if (typeof item.Checkstate == "undefined") {
+					this.$set(item, "Checkstate", true);
+					// 注意对比前后两次输出的结果
+					console.log(item.Checkstate);
+				} else {
+					item.Checkstate = !item.Checkstate;
+				}
+				this.goodsData.forEach(function (item, value) {
+					if (item.Checkstate) {
+						num++;
+					}
+				})
+				// 如果选中的商品种类个数等于商品列表（数组）的长度，修改全选框的全选标志；
+				if (num ==this.goodsData.length) {
+					this.checkAllFlag = true;
+				} else {
+					this.checkAllFlag = false;
+				}
+				// 计算总价
+				this.Allprice()
+			},
+			checkAll(){
+				this.checkAllFlag = !this.checkAllFlag;
+				this.goodsData.forEach((item, index)=>{
+					if (typeof item.Checkstate == "undefined") {
+						// 设置item的check属性
+						this.$set(item, "Checkstate", this.checkAllFlag);
+					} else {
+						item.Checkstate = this.checkAllFlag;
+					}
+				})
+				// 计算总价
+				this.Allprice();
+
+			},
 			back() {
 				this.$router.go(-1)
 			},
@@ -117,58 +161,48 @@
 				this.show = false;
 				this.date = this.formatDate(date);
 			},
-			add(index) {
-				this.goodsData[index].num++
-				console.log(this.goodsData)
-				
-				this.Allprice()
-			},
-			reduce(index) {
-					if(this.goodsData[index].num <=1){
-						this.goodsData[index].num++
-					}else{
-						this.goodsData[index].num--;
+			changeMoney: function (product, num) {
+					if (num > 0) {
+						product.num++;
+					} else {
+						product.num--;
+						if (product.num < 1) {
+							product.num = 1;
+						}
 					}
-				this.Allprice()
+					// 每次修改商品数量之后，均重新计算商品总价
+					this.Allprice();
 			},
 			Allprice() {
-				let y=0;
-				let z=0;
-				if(this.goodsData.length == 1) {
-					y = this.yajin[0];
-					z =  this.zujin[0];
-					this.allprice = (parseInt(y) + parseInt(z))*this.goodsData[0].num 
-				} else if(this.goodsData.length == 0){
-					this.allprice=0	
-				}else{
-					for(let i = 0; i < this.yajin.length; i++) {
-						y += parseInt(this.yajin[i])
-						console.log(parseInt(this.yajin[i]) )
-					}
-					for(let i = 0; i < this.zujin.length; i++) {
-						z += parseInt(this.yajin[i])
-					}
-					this.allprice = parseInt(y) + parseInt(z)
-				}
-			},
-			deleteCell(val,index){
-				console.log(val,index)
-				let goods = this.$store.state.goodsData.filter((item,index)=>{
-				    return item.title != val.title
-				});
+					this.allprice =0
+					this.goodsData.forEach((item,index)=>{
+						if(item.Checkstate){
+							console.log(index)
+							this.allprice += (parseInt(item.yajin)+parseInt(item.price))*parseInt(item.num)
+							console.log(this.allprice )
+						}
+					})
+					
+					
+
 				
-				this.$store.state.goodsData = goods
-				this.goodsData =goods
-				if(this.goodsData.length ==0){
+			},
+			deleteCell(val, index) {
+				let deletindex =  this.$store.state.goodsData.indexOf(val)
+				this.$store.state.goodsData.splice(index,1)
+				this.goodsData = this.$store.state.goodsData
+				this.Allprice()
+				if(this.$store.state.goodsData.length== 0) {
 					console.log(4)
 					this.allprice=0
+					
 					this.$router.push('/shopping')
 				}
 			},
-			gotocomfirm(){
+			gotocomfirm() {
 				this.$router.push('/comfirm')
 			}
-			
+
 		}
 	}
 </script>
@@ -202,7 +236,6 @@
 		top: 0;
 		left: 0;
 		overflow: auto;
-		
 		.nav {
 			text-align: center;
 			height: .7rem;

@@ -103,7 +103,7 @@
 					nowCheck:false
 				}
 				this.$store.state.address.push(address)
-				console.log(address)
+//				console.log(address)
 				this.$router.push('/comfirm/address')
 			},
 			

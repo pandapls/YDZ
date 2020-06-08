@@ -6,16 +6,14 @@
 				<span><van-icon name="arrow-left"  @click="back"/></span> 确认订单
 			</div>
 			<div class="address" @click="goaddress">
-				<p>请选择收获地址</p>
-				<i class="icon"><van-icon name="arrow" /></i>
-			</div>
-			<div class="address " id="hava" @click="goaddress" v-show="isshow">
-				<p >
-					{{address.username}}&nbsp;{{address.phone}}
-					<span>{{address.xiangxidizhi}}</span>
+				<p v-show="isshow">请选择收获地址</p>
+				<p v-show="!isshow" v-for="item in address">
+					{{item.username}}&nbsp;{{item.phone}}
+					<span>{{item.xiangxidizhi}}</span>
 				</p>
 				<i class="icon"><van-icon name="arrow" /></i>
 			</div>
+
 			<div class="goodshow">
 				<p class="tlt">
 					租凭商品
@@ -106,8 +104,8 @@
 				allyajin: 0,
 				allzujin: 0,
 				allprice: 0,
-				address: {},
-				isshow: false
+				address: [],
+				isshow: true
 			}
 		},
 		mounted() {
@@ -119,6 +117,10 @@
 			}
 			this.Allprice()
 			console.log(this.$store.state.goodsData)
+			
+			
+		},
+		beforeUpdate(){
 			this.getaddress()
 		},
 		computed: {
@@ -169,18 +171,13 @@
 				this.$toast('提交成功');
 			},
 			getaddress() {
-
-				let arr = []
 				if(this.$store.state.address.length > 0) {
-					arr = this.$store.state.address.filter((item) => {
+					this.address = this.$store.state.address.filter((item) => {
 						return item.nowCheck == true
 					})
-					console.log(arr)
-					this.address = arr[0]
-					this.isshow = true
-					Vue.$set(this.isshow,)
+					this.isshow = false
 				}
-				//				console.log(this.address)
+				console.log(this.address)
 			}
 		}
 
@@ -206,16 +203,6 @@
 				color: #929292;
 			}
 		}
-		#hava {
-			position: fixed;
-			top: 60/100rem;
-			width: 95%;
-			span {
-				position: absolute;
-				bottom: -40/100rem;
-				left: 20/100rem;
-			}
-		}
 		.address {
 			background: white;
 			padding: 0 20/100rem;
@@ -223,6 +210,13 @@
 			height: 100/100rem;
 			line-height: 100/100rem;
 			position: relative;
+			p{
+				span {
+				position: absolute;
+				bottom: -30/100rem;
+				left: 20/100rem;
+			}
+			}
 			.icon {
 				font-size: 18px;
 				position: absolute;
