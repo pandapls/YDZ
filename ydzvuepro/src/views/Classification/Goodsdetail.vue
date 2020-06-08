@@ -226,11 +226,12 @@
 						this.showPopup = true;
 			},
 			goComfirm(){
-				if(this.$store.state.loginstatus=""){
+				if(!this.$store.state.loginstatus){
 					this.$router.push('/login')
 				}else{
-					this.$router.push('/comfirm')
+					console.log(1)
 					this.getGoods()
+					this.$router.push('/comfirm')
 				}
 			}
 		}
