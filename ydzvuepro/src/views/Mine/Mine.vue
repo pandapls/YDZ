@@ -44,7 +44,7 @@
 		<div class="server">
 			<p class="sev-tit">其他服务</p>
 			<ul>
-				<li @click="onAddress">
+				<li @click="GetAddress">
 					<span class="iconfont icon-shouhuodizhi"></span>
 					<p>收货地址</p>
 						
@@ -65,8 +65,8 @@
     		back(){
     			this.$router.go(-1)
     		},
-    		onAddress(){
-    			this.$router.push('/address')
+    		GetAddress(){
+    			this.$router.push('/getaddress')
     		}
     	},
     	beforeMount(){

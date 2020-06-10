@@ -12,6 +12,7 @@ import AddMyress from '../components/addmyress.vue'
 import Comfirm from '../views/Shopping/comfirm.vue'
 import Login from '../views/Login/login.vue'
 import Register from '../views/Login/register.vue'
+import GetAddress from '../views/Mine/getaddress.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -67,6 +68,11 @@ const routes = [{
 	    path: '/register',
 	    name: 'register',
 	    component: Register
+	},
+	{
+	    path: '/getaddress',
+	    name: 'getaddress',
+	    component: GetAddress
 	},
 
 	{
