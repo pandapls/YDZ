@@ -12,6 +12,7 @@ import AddMyress from '../components/addmyress.vue'
 import Comfirm from '../views/Shopping/comfirm.vue'
 import Login from '../views/Login/login.vue'
 import Register from '../views/Login/register.vue'
+import store from '../store/index.js'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -27,7 +28,8 @@ const routes = [{
 	{
 		path: '/mine',
 		name: 'Mine',
-		component: Mine
+		component: Mine,
+		meta:{reqireAuth:true}
 	},
 	{
 		path: '/category',
@@ -43,7 +45,9 @@ const routes = [{
 	{
 		path: '/shopping',
 		name: 'Shopping',
-		component: Shopping
+		component: Shopping,
+		meta:{reqireAuth:true}
+		
 	},
 	{
 		path: '/goodslist',
@@ -54,7 +58,8 @@ const routes = [{
 	{
 		path: '/havedata',
 		name: 'havedata',
-		component: Havedata
+		component: Havedata,
+		meta:{reqireAuth:true}
 	},
 	
 	{
@@ -73,6 +78,7 @@ const routes = [{
 		path:'/comfirm',
 		name:'comfirm',
 		component:Comfirm,
+		meta:{reqireAuth:true},
 		children:[
 				{
 				path: 'address',
@@ -94,6 +100,28 @@ const routes = [{
 
 const router = new VueRouter({
 	routes
+})
+//不能删
+router.beforeEach((to,from,next)=>{
+	if(to.meta.reqireAuth){
+		if(JSON.parse(sessionStorage.getItem('loginphone'))){
+			next()
+		}else{
+			store.state.histroyPath = to.fullPath
+			next({path:'/login'})
+		}
+	}else{
+		next()
+	}
+	if(to.fullPath == "/login"){	
+		if(JSON.parse(sessionStorage.getItem('loginphone'))){
+			next({
+				path:from.fullPath
+			})
+		}else{
+			next()
+		}
+	}
 })
 const originalPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location) {

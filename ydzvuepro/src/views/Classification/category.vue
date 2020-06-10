@@ -35,7 +35,6 @@
 				await fetch(path)
 					.then(res => res.json())
 					.then(data => {
-//						console.log(data);
 						this.msg = data;
 					})
 					.catch(function(e) {
@@ -43,7 +42,6 @@
 					});
 			},
 			getPath(val){
-				console.log(val)
 				 this.$store.state.listpath =val
 			}
 		}

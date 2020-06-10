@@ -113,12 +113,9 @@
 		methods: {
 			setSelet(item) {
 				let num = 0;
-				// 注意对比前后两次输出的结果
-				console.log(item.check);
 				if (typeof item.Checkstate == "undefined") {
 					this.$set(item, "Checkstate", true);
-					// 注意对比前后两次输出的结果
-					console.log(item.Checkstate);
+
 				} else {
 					item.Checkstate = !item.Checkstate;
 				}
@@ -151,7 +148,9 @@
 
 			},
 			back() {
-				this.$router.go(-1)
+				console.log(this.$store.state.histroyPath)
+				this.$router.push('/goodsdetail')
+//				this.$router.go(-1)
 			},
 			formatDate(date) {
 				let data = new Date()
@@ -177,9 +176,7 @@
 					this.allprice =0
 					this.goodsData.forEach((item,index)=>{
 						if(item.Checkstate){
-							console.log(index)
 							this.allprice += (parseInt(item.yajin)+parseInt(item.price))*parseInt(item.num)
-							console.log(this.allprice )
 						}
 					})
 					
@@ -193,7 +190,6 @@
 				this.goodsData = this.$store.state.goodsData
 				this.Allprice()
 				if(this.$store.state.goodsData.length== 0) {
-					console.log(4)
 					this.allprice=0
 					
 					this.$router.push('/shopping')

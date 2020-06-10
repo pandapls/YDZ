@@ -1,0 +1,23 @@
+{
+  "id": "1848338",
+  "name": "doubanfont",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8777602",
+      "name": "show_less",
+      "font_class": "icon-test3",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "8777603",
+      "name": "show_more",
+      "font_class": "icon-test4",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    }
+  ]
+}

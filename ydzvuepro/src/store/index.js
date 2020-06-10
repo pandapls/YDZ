@@ -12,21 +12,42 @@ export default new Vuex.Store({
 		address:[],
 		loginstatus:false,
 		loginphone:'',
+		histroyPath:'',
+		goodsDatalist:[]
+		
 	},
 	getters: {
 
 	},
 	mutations: {
 		setData(state, data) {
-			//		console.log(data)
-			// 注释部分就是最基础的vueX的存储方法
+			 let result = state.goodsData.some((item)=>{
+						if(item.id==data.id){
+							item.num = item.num +1;
+							return true
+						}else{
+							
+							return false
+						}
+					})
+//			console.log(data)
+console.log(result)
+			if(!result){
+				console.log(1)
+				state.goodsData.push(data)
+			}
+			console.log(state.goodsData)
+//			state.goodsData = state.goodsData.
 
-			state.goodsData.push(data)
-			state.num = data.num 
-			// 改进方法是把token值储存在sessionStorage（会话信息）中，特点是当浏览器关闭时，会话信息会清除掉，增强token的保密性；
-			sessionStorage.setItem("data", state.goodsData);
+			// 改进方法是把token值储存在sessionStorage（会话信息）中，特点是当浏览器关闭时，会话信息会清除掉，增强保密性；
+			sessionStorage.setItem("data", state.goodsDatalist);
 			sessionStorage.setItem("address", state.address);
-			sessionStorage.setItem("loginstatus", state.loginstatus);
+			
+		},
+		login(state,userid){
+			state.loginphone =userid
+//			localStorage.setItem("loginphone", userid);
+				sessionStorage.setItem("loginphone", userid);
 		}
 	},
 	actions: {},

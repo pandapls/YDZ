@@ -159,13 +159,13 @@
 					// 默认商品 sku 缩略图
 					title: "",
 					picture: "https://img.yzcdn.cn/1.jpg"
-				}
+				},
+				temp:[]
 			};
 
 		},
 
 		mounted: function() {
-			console.log("http://localhost:8000/" + this.$store.state.indexpath)
 			this.getHoneData("http://localhost:8000/" + this.$store.state.indexpath);
 
 		},
@@ -174,8 +174,7 @@
 				await fetch(path)
 					.then(res => res.json())
 					.then(data => { 
-							console.log(data);
-						console.log(data.productPicInfos[0], data.title); 
+						console.log(data)
 						this.msg = data;
 						this.title = data.title;
 						this.productProfile = data.productProfile;
@@ -204,35 +203,28 @@
 				this.showsku = false;
 			},
 			getGoods() {
-				if(!this.$store.state.loginstatus){
-					console.log(1)
-					this.$router.push('/login')
-				}else{
 					this.goodsdata = {
-					title: this.title,
-					price: this.msg.minRentAmount,
-					yajin: this.msg.deposit,
-					imgSrc: this.msg.productPicInfos[0].filePath,
-					num: this.num,
-					Checkstate:true
+						title: this.title,
+						price: this.msg.minRentAmount,
+						yajin: this.msg.deposit,
+						imgSrc: this.msg.productPicInfos[0].filePath,
+						num: this.num,
+						Checkstate:true,
+						id:this.msg.id
 					}
-					let arr = [];
+//					this.$store.state.goodsData.push(this.goodsdata)
+					
 					this.$store.commit("setData", this.goodsdata);
-					console.log(this.$store.state.goodsData)
-				}
-				
+
+					
+					
 			},
 			showPopup1() {
 						this.showPopup = true;
 			},
 			goComfirm(){
-				if(!this.$store.state.loginstatus){
-					this.$router.push('/login')
-				}else{
-					console.log(1)
-					this.getGoods()
-					this.$router.push('/comfirm')
-				}
+				this.$router.push('/comfirm')
+				this.getGoods()
 			}
 		}
 	}

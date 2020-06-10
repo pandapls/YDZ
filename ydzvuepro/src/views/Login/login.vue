@@ -59,6 +59,12 @@
 				show: false,
 			}
 		},
+//		beforeRouteEnter(to, from, next) {
+//		   next(vm=>{          //  这里的vm指的就是vue实例，可以用来当做this使用
+//		      console.log(to)
+//		      console.log(from)
+//		    })
+//	  },
 		methods: {
 			sub() {
 				//手机号验证
@@ -70,10 +76,14 @@
 					this.$toast('请输入手机号码');
 					this.$store.state.loginstatus =false
 				} else if(str.test(this.ip)) {
-					console.log("登录成功");
-					this.$router.push("/shopping")
+					
+				
 					this.$store.state.loginphone=this.ip
 					this.$store.state.loginstatus =true
+					this.$store.commit('login',this.ip)
+					//不能删
+					this.$router.push(this.$store.state.histroyPath)
+					console.log("登录成功");
 				} else {
 					//		      	this.showPhone=true;
 					console.log("手机号格式不正确");

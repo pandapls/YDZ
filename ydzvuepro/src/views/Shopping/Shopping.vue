@@ -26,11 +26,11 @@ export default{
 		
 	},
 	beforeMount(){
-		if(this.$store.state.loginstatus){
-			this.$router.push("/shopping")
-		}else{
-			this.$router.push("/login")
-		}
+//		if(this.$store.state.loginstatus){
+//			this.$router.push("/shopping")
+//		}else{
+//			this.$router.push("/login")
+//		}
 	}
 }
 </script>

@@ -1,10 +1,11 @@
 <template>
-	<div class="mine">
+	<div>
+		<div class="mine">
 		<div class="nav">
 			<span @click="back"><van-icon name="arrow-left" /></span> 个人中心
 		</div>
 		<div class="methods">
-			{{this.$store.state.loginphone}}
+			{{username}}
 			<span><van-icon name="arrow" /></span>
 		</div>
 		<div class="order">
@@ -56,26 +57,38 @@
 			</ul>
 		</div>
 	</div>
+	<router-view></router-view>
+	</div>
 </template>
 
 <script>
     export default{
     	name:"mine",
+    	data(){
+    		return {
+    			username:'',
+    		}
+    	},
+    	mounted(){
+    		this.username = JSON.parse(sessionStorage.getItem('loginphone'))
+    		console.log(JSON.parse(sessionStorage.getItem('loginphone')))
+    	},
     	methods:{
     		back(){
     			this.$router.go(-1)
     		},
     		onAddress(){
-    			this.$router.push('/address')
+				
     		}
+    		
     	},
-    	beforeMount(){
-		if(this.$store.state.loginstatus){
-			return
-		}else{
-			this.$router.push("/login")
-		}
-	}
+//  	beforeMount(){
+//			if(this.$store.state.loginstatus){
+//				return
+//			}else{
+//				this.$router.push("/login")
+//			}
+//		}
     }
 </script>
 

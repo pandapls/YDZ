@@ -105,18 +105,17 @@
 				allzujin: 0,
 				allprice: 0,
 				address: [],
-				isshow: true
+				isshow: true,
+				val:''
 			}
 		},
 		mounted() {
 			this.goods = this.$store.state.goodsData
-			console.log(this.goods)
 			for(let i = 0; i < this.goods.length; i++) {
 				this.yajin.push(this.goods[i].yajin)
 				this.zujin.push(this.goods[i].price)
 			}
 			this.Allprice()
-			console.log(this.$store.state.goodsData)
 			
 			
 		},
@@ -135,10 +134,10 @@
 				//				this.isShow = true
 			},
 			back() {
-				this.$router.push('/goodsdetail')
+				this.$router.go(-1)
+
 			},
 			Allprice() {
-				console.log(this.yajin, this.zujin)
 				let y = 0;
 				let z = 0;
 				if(this.goods.length == 1) {
@@ -147,27 +146,21 @@
 					this.allyajin = y
 					this.allzujin = z
 					this.allprice = (parseInt(y) + parseInt(z)) * this.$store.state.num
-					console.log(this.allyajin)
 				} else {
-
-					console.log(2)
 					for(let i = 0; i < this.yajin.length; i++) {
 						y += parseInt(this.yajin[i])
 						this.allyajin = y
-						console.log(parseInt(this.yajin[i]))
 					}
 					for(let i = 0; i < this.zujin.length; i++) {
 						z += parseInt(this.zujin[i])
 						this.allzujin = z
 
 					}
-					console.log(y, z)
 					this.allprice = parseInt(y) + parseInt(z)
 				}
 
 			},
 			submit() {
-				console.log("提交")
 				this.$toast('提交成功');
 			},
 			getaddress() {
@@ -177,7 +170,6 @@
 					})
 					this.isshow = false
 				}
-				console.log(this.address)
 			}
 		}
 
