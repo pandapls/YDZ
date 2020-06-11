@@ -31,7 +31,11 @@
 		},
 		methods: {
 			onSearch(val) {
-				this.$router.push("/login")
+				if(this.$store.state.loginstatus){
+					this.$router.push("/mine")
+				}else{
+					this.$router.push("/login")
+				}
 			},
 			onfocus(){
 				this.jug = true
