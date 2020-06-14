@@ -13,6 +13,8 @@ import Comfirm from '../views/Shopping/comfirm.vue'
 import Login from '../views/Login/login.vue'
 import Register from '../views/Login/register.vue'
 import store from '../store/index.js'
+import GetAddress from '../views/Mine/getaddress.vue'
+import Order from '../views/Mine/order.vue'
 Vue.use(VueRouter)
 
 const routes = [{
@@ -29,7 +31,9 @@ const routes = [{
 		path: '/mine',
 		name: 'Mine',
 		component: Mine,
-		meta:{reqireAuth:true}
+		meta: {
+			reqireAuth: true
+		},
 	},
 	{
 		path: '/category',
@@ -46,8 +50,10 @@ const routes = [{
 		path: '/shopping',
 		name: 'Shopping',
 		component: Shopping,
-		meta:{reqireAuth:true}
-		
+		meta: {
+			reqireAuth: true
+		}
+
 	},
 	{
 		path: '/goodslist',
@@ -59,41 +65,51 @@ const routes = [{
 		path: '/havedata',
 		name: 'havedata',
 		component: Havedata,
-		meta:{reqireAuth:true}
-	},
-	
-	{
-	    path: '/login',
-	    name: 'login',
-	    component: Login
-  	},
-  	
-  	{
-	    path: '/register',
-	    name: 'register',
-	    component: Register
+		meta: {
+			reqireAuth: true
+		}
 	},
 
 	{
-		path:'/comfirm',
-		name:'comfirm',
-		component:Comfirm,
-		meta:{reqireAuth:true},
-		children:[
-				{
+		path: '/login',
+		name: 'login',
+		component: Login
+	},
+
+	{
+		path: '/register',
+		name: 'register',
+		component: Register
+	},
+	{
+		path: '/getaddress',
+		name: 'getaddress',
+		component: GetAddress
+	},
+	{
+		path: '/order',
+		name: 'order',
+		component: Order
+	},
+	{
+		path: '/comfirm',
+		name: 'comfirm',
+		component: Comfirm,
+		meta: {
+			reqireAuth: true
+		},
+		children: [{
 				path: 'address',
 				name: 'address',
 				component: Address,
-				children:[
-						{
-						path: 'addmyress',
-						name: 'addmyress',
-						component: AddMyress
-				
-					},
-				]
+				children: [{
+					path: 'addmyress',
+					name: 'addmyress',
+					component: AddMyress
+
+				}, ]
 			}
-		
+
 		]
 	}
 ]
@@ -103,8 +119,9 @@ const router = new VueRouter({
 })
 //不能删
 router.beforeEach((to,from,next)=>{
+
 	if(to.meta.reqireAuth){
-		if(JSON.parse(sessionStorage.getItem('loginphone'))){
+		if(JSON.parse(sessionStorage.getItem('username'))||JSON.parse(localStorage.getItem('username'))){
 			next()
 		}else{
 			store.state.histroyPath = to.fullPath
@@ -114,7 +131,7 @@ router.beforeEach((to,from,next)=>{
 		next()
 	}
 	if(to.fullPath == "/login"){	
-		if(JSON.parse(sessionStorage.getItem('loginphone'))){
+		if(JSON.parse(sessionStorage.getItem('username'))||JSON.parse(localStorage.getItem('username'))){
 			next({
 				path:from.fullPath
 			})

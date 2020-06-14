@@ -1,63 +1,62 @@
 <template>
 	<div>
 		<div class="mine">
-		<div class="nav">
-			<span @click="back"><van-icon name="arrow-left" /></span> 个人中心
-		</div>
-		<div class="methods">
-			{{username}}
-			<span><van-icon name="arrow" /></span>
-		</div>
-		<div class="order">
-			<p class="myorder">我的订单</p>
-			<ul>
-				<li>
-					<span class="iconfont icon-dingdan dingdan"></span>
-					<p>全部订单</p>
-				</li>
-				<li>
-					<span class="iconfont icon-zhifudan zhifudan"></span>
-					<p>待支付</p>
-				</li>
-				<li>
-					<span class="iconfont icon-daishouhuo daishouhuo"></span>
-					<p>待收货</p>
-				</li>
-			</ul>
-		</div>
-		<div class="numMoney">
-			<p class="noMoney">您尚未申请免押金额度</p>
-			<p>可用于下单时抵扣设备押金<span>开通</span></p>
-		</div>
-		<div class="count">
-			<div class="mycount">
-				<p class="mysc">我的账户</p>
-				<p class="zhanghu"><span class="iconfont icon-zhanghuzichan"></span>账户余额(元)</p>
-				<p class="c-zero">0.00<span class="rechange">充值</span></p>
+			<div class="nav">
+				<span @click="back"><van-icon name="arrow-left" /></span> 个人中心
 			</div>
-			<div class="saveMoney">
-				<p>
-					<span class="iconfont icon-9"></span>优惠券(张)
-				</p>
-				<p class="s-num">0</p>
+			<div class="methods">
+				{{username}}
+				<span @click="tuichu">退出登录</span>
+			</div>
+			<div class="order">
+				<p class="myorder">我的订单</p>
+				<ul>
+					<li @click="goOrder">
+						<span class="iconfont icon-dingdan dingdan"></span>
+						<p>全部订单</p>
+					</li>
+					<li>
+						<span class="iconfont icon-zhifudan zhifudan"></span>
+						<p>待支付</p>
+					</li>
+					<li>
+						<span class="iconfont icon-daishouhuo daishouhuo"></span>
+						<p>待收货</p>
+					</li>
+				</ul>
+			</div>
+			<div class="numMoney">
+				<p class="noMoney">您尚未申请免押金额度</p>
+				<p>可用于下单时抵扣设备押金<span>开通</span></p>
+			</div>
+			<div class="count">
+				<div class="mycount">
+					<p class="mysc">我的账户</p>
+					<p class="zhanghu"><span class="iconfont icon-zhanghuzichan"></span>账户余额(元)</p>
+					<p class="c-zero">0.00<span class="rechange">充值</span></p>
+				</div>
+				<div class="saveMoney">
+					<p>
+						<span class="iconfont icon-9"></span>优惠券(张)
+					</p>
+					<p class="s-num">0</p>
+				</div>
+			</div>
+			<div class="server">
+				<p class="sev-tit">其他服务</p>
+				<ul>
+					<li @click="GetAddress">
+						<span class="iconfont icon-shouhuodizhi"></span>
+						<p>收货地址</p>
+							
+					</li>
+					<li>
+						<span class="iconfont icon-rengongfuwu"></span>
+						<p>人工服务</p>						
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div class="server">
-			<p class="sev-tit">其他服务</p>
-			<ul>
-				<li @click="onAddress">
-					<span class="iconfont icon-shouhuodizhi"></span>
-					<p>收货地址</p>
-						
-				</li>
-				<li>
-					<span class="iconfont icon-rengongfuwu"></span>
-					<p>人工服务</p>						
-				</li>
-			</ul>
-		</div>
-	</div>
-	<router-view></router-view>
 	</div>
 </template>
 
@@ -70,25 +69,34 @@
     		}
     	},
     	mounted(){
-    		this.username = JSON.parse(sessionStorage.getItem('loginphone'))
-    		console.log(JSON.parse(sessionStorage.getItem('loginphone')))
+    		if(JSON.parse(sessionStorage.getItem('username'))){
+    			this.username = JSON.parse(sessionStorage.getItem('username'))
+    		}else if(JSON.parse(localStorage.getItem('username'))){
+    			this.username = JSON.parse(localStorage.getItem('username'))
+    		}
+    		
+
     	},
     	methods:{
     		back(){
     			this.$router.go(-1)
     		},
-    		onAddress(){
-				
+    		GetAddress(){
+    			this.$router.push('/getaddress')
+    		},
+    		goOrder(){
+    			this.$router.push('/order')
+    		},
+    		tuichu(){
+    			console.log(JSON.parse(localStorage.getItem('username')))
+    			localStorage.removeItem('username');
+    			sessionStorage.removeItem('username');
+    			this.$router.push('/home')
+    			
     		}
     		
     	},
-//  	beforeMount(){
-//			if(this.$store.state.loginstatus){
-//				return
-//			}else{
-//				this.$router.push("/login")
-//			}
-//		}
+			
     }
 </script>
 
@@ -124,7 +132,8 @@
 		span {
 			float: right;
 			margin-right: .2rem;
-			color: #929292;
+			color: #e45050;
+			font-size: 12px;
 		}
 	}
 	

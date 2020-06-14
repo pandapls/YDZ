@@ -11,9 +11,11 @@ export default new Vuex.Store({
 		data: {},
 		address:[],
 		loginstatus:false,
-		loginphone:'',
+		username:'',
 		histroyPath:'',
-		goodsDatalist:[]
+		goodsDatalist:[],
+		mapaddress:'',
+		order:[]
 		
 	},
 	getters: {
@@ -30,14 +32,9 @@ export default new Vuex.Store({
 							return false
 						}
 					})
-//			console.log(data)
-console.log(result)
 			if(!result){
-				console.log(1)
 				state.goodsData.push(data)
 			}
-			console.log(state.goodsData)
-//			state.goodsData = state.goodsData.
 
 			// 改进方法是把token值储存在sessionStorage（会话信息）中，特点是当浏览器关闭时，会话信息会清除掉，增强保密性；
 			sessionStorage.setItem("data", state.goodsDatalist);
@@ -45,9 +42,20 @@ console.log(result)
 			
 		},
 		login(state,userid){
-			state.loginphone =userid
+			state.username =userid
 //			localStorage.setItem("loginphone", userid);
-				sessionStorage.setItem("loginphone", userid);
+				sessionStorage.setItem("username", userid);
+		},
+		address(state,data){
+			state.address.unshift(data)
+			state.address.forEach((item,index)=>{
+					if(index==0){
+						item.nowCheck=true
+					}else{
+						item.nowCheck=false
+					}
+				})
+			
 		}
 	},
 	actions: {},

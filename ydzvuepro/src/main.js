@@ -14,6 +14,7 @@ import 'mint-ui/lib/style.css'
 import 'vant/lib/index.css'
 import animated from 'animate.css'
 Vue.use(animated)
+
 Vue.use(Lazyload, {
   lazyComponent: true,
   loading: './image/loading.gif'

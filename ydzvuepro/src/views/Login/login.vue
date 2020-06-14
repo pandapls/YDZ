@@ -37,8 +37,8 @@
 
 		<div id="later">
 			<form action method="post">
-				<label for="lz">
-          <input id="lz" type="checkbox" value /> 两周内自动登录
+				<label for="lz" @change="jugcheck">
+          		<input id="lz" type="checkbox" v-model="ischecke"  /> 两周内自动登录
         </label>
 				<span>
           <router-link to="/register">立即注册</router-link>
@@ -63,15 +63,21 @@
 				ip: "",
 				note: "",
 				btntxt: "获取验证码",
-				randnum: ''
+				randnum: '',
+				ischecke:false,
 			};
 		},
-
+		mounted(){
+			this.getStorage('username')
+		},
 		methods: {
 			// 获取验证码
 			huoquYZM() {
 				this.time = 60;
-				if(this.ip !== "") {
+				let str = /^1(3|5|7|8)\d{9}$/;
+				console.log(this.ip!= ""&&str.test(this.ip))
+				if(this.ip!= ""&&str.test(this.ip)) {
+					
 					this.timer();
 					console.log(1)
 
@@ -82,10 +88,42 @@
 					console.log(this.randnum)
 
 					this.sendnote(this.ip, this.randnum)
+				}else{
+						this.$toast("请输入手机号！");
 				}
+				
 
 			},
-
+			setStorage(name, value, expires) {
+				var time = new Date();
+				console.log(time.getTime())
+				time.setTime(time.getTime() + expires * 60 * 60 * 1000);
+				if(localStorage.getItem(name)) {
+					return;
+	
+				}
+				localStorage.setItem(name, JSON.stringify({
+					value: value,
+					expires: time.getTime()
+				}));
+			},
+			jugcheck(){
+				
+			},
+			 getStorage(name) {
+				var storages = localStorage.getItem(name);
+				if(!storages) return;
+				storages = JSON.parse(storages);
+				var expires = storages.expires;
+				var currTime = new Date();
+				currTime = currTime.getTime();
+				if(currTime - expires >= 0) {
+					localStorage.removeItem(name);
+					return undefined;
+				} else {
+					return storages.value;
+				}
+			},
 			sendnote(tel, code) { //tel:电话号码，code：自定义的验证码
 				const text = '验证码：' + code + ',您正在使用登陆功能,该验证码仅用于身份验证,在五分钟之内有效，请勿泄露给其他人使用。'
 				let param = new URLSearchParams();
@@ -126,25 +164,32 @@
 					this.$toast("请输入手机号码");
 					this.disabled = false;
 					this.$store.state.loginstatus = false;
-					return;
+					
+					return false
 				} else if(!str.test(this.ip)) {
 					this.$toast("手机号码格式不正确！");
 					this.$store.state.loginstatus = false;
-					return;
+					return false
 				} else if(this.note == "") {
 					this.$toast("验证码不能为空");
 					this.$store.state.loginstatus = false;
-					return;
+					return false;
 				} else if(this.randnum != this.note) {
 					this.$toast("验证码错误");
 					this.$store.state.loginstatus = false;
-					return;
+					return false;
 				} else {
 					this.$store.state.loginphone = this.ip
 					this.$store.commit('login', this.ip)
 					//不能删
 					this.$router.push(this.$store.state.histroyPath)
 					this.$store.state.loginstatus = true
+					if(this.ischecke){
+						this.setStorage('username',this.ip,336)
+					}else{
+						return true;
+					}
+					return true
 				}
 			},
 			sub2() {
@@ -154,19 +199,19 @@
 				if(this.username == null || this.username == "") {
 					this.$toast("请输入账号");
 					this.$store.state.loginstatus = false;
-					return;
+					return false;
 				} else if(!str.test(this.username)) {
 					this.$toast("账号应为6-32位数字与字母组合！");
 					this.$store.state.loginstatus = false;
-					return;
+					return false;
 				} else if(this.pwd == null || this.pwd == "") {
 					this.$toast("请输入密码！");
 					this.$store.state.loginstatus = false;
-					return;
+					return false;
 				} else if(!str2.test(this.pwd)) {
 					this.$toast("密码应为8-32位数字与字母组合");
 					this.$store.state.loginstatus = false;
-					return;
+					return false;
 				} else {
 					this.$router.push("/login");
 				}

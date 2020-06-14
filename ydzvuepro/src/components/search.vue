@@ -3,7 +3,7 @@
 		<form action="/">
 			<van-search shape="round" show-action :background="bgcolor" placeholder="免押金租电脑" @search="onSearch"  @focus="onfocus" >
 				  <template #action>
-				    <div @click="onSearch" class="login" v-show="true" >{{login}}</div>
+				    <div @click="onSearch" class="login" v-show="!	$store.state.loginstatus" >{{login}}</div>
 				  </template>
 			</van-search> 
 		</form>
@@ -49,7 +49,7 @@
 			},
 			getHoneData(value) {
 				console.log('https://so.edianzu.com/sug?time=1591193658488&code=92364863cd67fa7cba7daa8b7570c5dd&plat=2&q='+value)
-					 fetch('https://so.edianzu.com/sug?time=1591580530666&code=dff1985e68e4391efff1009bc78e07f8&plat=2&q='+value)
+					 fetch('https://so.edianzu.com/sug?time=1591862998492&code=00b54b3085ce62fa182c3aaf85f3d9e0&plat=2&q='+value)
 					.then(res => res.json())
 					.then(data => {
 						console.log(data.data);

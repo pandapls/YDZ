@@ -88,6 +88,9 @@
             
             
         },
+        mounted(){
+        	this.address = this.$store.state.mapaddress
+        },
 		methods: {
 			back() {
 				this.$router.go(-1)
@@ -98,15 +101,23 @@
 				let address = {
 					username:this.username,
 					phone:this.Phone,
-					dizhi:this.selectProvices+this.selecCity+this.selecqu,
+					dizhi:this.jug(),
 					xiangxidizhi:this.address,
 					nowCheck:false
 				}
-				this.$store.state.address.push(address)
+			this.$store.commit('address',address)
 //				console.log(address)
 				this.$router.push('/comfirm/address')
 			},
-			
+			jug(){
+				if(this.address==''){
+					return  this.selectProvices+this.selecCity+this.selecqu
+				}else{
+					return  this.$store.state.mapaddress
+					
+				}
+				
+			}
 		}
 	}
 </script>

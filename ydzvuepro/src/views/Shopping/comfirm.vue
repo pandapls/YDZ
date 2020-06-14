@@ -115,15 +115,13 @@
 				this.yajin.push(this.goods[i].yajin)
 				this.zujin.push(this.goods[i].price)
 			}
+//			console.log(this.allprice)
 			this.Allprice()
 			
 			
 		},
 		beforeUpdate(){
 			this.getaddress()
-		},
-		computed: {
-
 		},
 		methods: {
 			change() {
@@ -140,28 +138,52 @@
 			Allprice() {
 				let y = 0;
 				let z = 0;
+				let x = 0
 				if(this.goods.length == 1) {
 					y = this.yajin[0];
 					z = this.zujin[0];
 					this.allyajin = y
 					this.allzujin = z
-					this.allprice = (parseInt(y) + parseInt(z)) * this.$store.state.num
+					this.allprice = (parseInt(y) + parseInt(z)) * this.$store.state.goodsData[0].num
 				} else {
 					for(let i = 0; i < this.yajin.length; i++) {
-						y += parseInt(this.yajin[i])
+						y = parseInt(this.yajin[i])
+						z = parseInt(this.zujin[i])
 						this.allyajin = y
-					}
-					for(let i = 0; i < this.zujin.length; i++) {
-						z += parseInt(this.zujin[i])
 						this.allzujin = z
-
+						x += (y+z)*this.$store.state.goodsData[i].num
 					}
-					this.allprice = parseInt(y) + parseInt(z)
+					
+					this.allprice =x
+					
 				}
 
 			},
 			submit() {
-				this.$toast('提交成功');
+				console.log(this.$store.state.goodsData)
+				
+				if(this.$store.state.address.length==0){
+					this.$toast('地址未填写');
+					return false;
+				}else{
+					this.$toast('提交成功');
+					for(let i=0;i<this.$store.state.goodsData.length;i++){
+							this.$store.state.order.push({
+							title: this.$store.state.goodsData[i].title,
+							price: this.$store.state.goodsData[i].price,
+							yajin: this.$store.state.goodsData[i].yajin,
+							imgSrc: this.$store.state.goodsData[i].imgSrc,
+							num: this.$store.state.goodsData[i].num,
+							Checkstate:true,
+							id:this.$store.state.goodsData[i].id,
+							
+						})
+					}
+					this.$store.state.order.allprice = this.allprice
+					this.$store.state.goodsData =[]
+				}
+				
+				
 			},
 			getaddress() {
 				if(this.$store.state.address.length > 0) {

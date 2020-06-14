@@ -13,11 +13,11 @@
 					<van-icon name="passed"  class="radio radio-check"  v-show="item.nowCheck"/>
 					<span>默认地址</span>
 					</i>
-					<span class="chang">
+					<!--<span class="chang">
 						<van-icon name="records" />
 						&nbsp;修改
-					</span>
-					<span class="delet">
+					</span>-->
+					<span class="delet" @click="delet(item,index)">
 						<van-icon name="delete" />
 						&nbsp;删除
 					</span>
@@ -50,6 +50,19 @@
 			},
 			check(val){
 				val.nowCheck =!val.nowCheck
+				
+			},
+			delet(val,index){
+				let deletindex =  this.$store.state.address.indexOf(val)
+				this.$store.state.address.splice(index,1)
+				this.addresslist = this.$store.state.address
+				this.addresslist.forEach((item,index)=>{
+					if(index==0){
+						item.nowCheck=true
+					}else{
+						item.nowCheck=false
+					}
+				})
 				
 			}
 		}

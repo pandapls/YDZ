@@ -2,9 +2,9 @@
   <div class="goodsdetail_box">
     <div class="back_title">
       <mt-header fixed title="商品详情">
-        <router-link to="/" slot="left">
-          <mt-button icon="back"></mt-button>
-        </router-link>
+
+          <mt-button icon="back"  slot="left" @click="back"></mt-button>
+
       </mt-header>
     </div>
     <div class="goodsdetail_content">
@@ -133,7 +133,7 @@
         :show-add-cart-btn="false"
         buy-text="加入购物车  "
         :goods="goods"
-        @addcart="onAddCartClicked"
+        @buy-clicked="onBuyClicked"
       />
     </div>
   </div>
@@ -180,7 +180,6 @@
 					title: "",
 					picture: "https://img.yzcdn.cn/1.jpg"
 				},
-				temp:[]
 			};
 
 		},
@@ -194,7 +193,7 @@
 				await fetch(path)
 					.then(res => res.json())
 					.then(data => { 
-						console.log(data)
+//						console.log(data)
 						this.msg = data;
 						this.title = data.title;
 						this.minPrice = data.minRentAmount;
@@ -209,6 +208,9 @@
 						this.sku.stock_num = data.limitedNum;
 						this.sku.list[0].stock_num = data.limitedNum;
 						this.sku.tree[0].v[0].name = data.miniTitle; 
+//						this.sku.list[0].price = data.minRentAmount*100
+//						this.sku.tree[0].v[0].name = data.minTitle*100
+						
 					})
 					.catch(function(e) {
 						console.log("oops! error:", e.message);
@@ -216,6 +218,7 @@
 			},
 			back() {
 				this.$router.go(-1); //返回上一层
+//					console.log(this.$router.histroyPath)
 			},
 			shangpSumbit() {
 				this.showsku = true;
@@ -223,6 +226,10 @@
 			// 立即提交
 			onAddCartClicked() {
 				this.showsku = false;
+			},
+			onBuyClicked(){
+				this.getGoods();
+				this.showsku =false
 			},
 			getGoods() {
 					this.goodsdata = {
@@ -389,7 +396,8 @@
     width: 100%;
   }
   img {
-    width: 100%;
+    width: 100%!important;
+     height:100%!important;
   }
 }
 

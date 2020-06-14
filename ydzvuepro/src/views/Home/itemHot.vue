@@ -44,7 +44,7 @@
 					});
 			},
 			getPath(val){
-				console.log(val)
+//				console.log(val)
 				 this.$store.state.indexpath =val
 			}
 		}
