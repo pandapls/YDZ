@@ -75,18 +75,13 @@
 			huoquYZM() {
 				this.time = 60;
 				let str = /^1(3|5|7|8)\d{9}$/;
-				console.log(this.ip!= ""&&str.test(this.ip))
-				if(this.ip!= ""&&str.test(this.ip)) {
-					
+				if(this.ip!= ""&&str.test(this.ip)) {			
 					this.timer();
-					console.log(1)
-
 					function rand(min, max) {
 						return Math.floor(Math.random() * (max - min)) + min;
 					}
 					this.randnum = rand(1000, 9999);
 					console.log(this.randnum)
-
 					this.sendnote(this.ip, this.randnum)
 				}else{
 						this.$toast("请输入手机号！");
@@ -182,7 +177,13 @@
 					this.$store.state.loginphone = this.ip
 					this.$store.commit('login', this.ip)
 					//不能删
-					this.$router.push(this.$store.state.histroyPath)
+//					console.log(this.$store.state.histroyPath)
+					
+					if(this.$store.state.jilu){
+						this.$router.go(-1);
+					}else{
+						this.$router.push(this.$store.state.histroyPath)
+					}
 					this.$store.state.loginstatus = true
 					if(this.ischecke){
 						this.setStorage('username',this.ip,336)

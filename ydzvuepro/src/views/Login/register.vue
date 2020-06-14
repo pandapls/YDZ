@@ -3,7 +3,7 @@
 		<div id="header">
 			<!--<div class="nav">-->
 			<h4>
-        <van-icon name="arrow-left" class="left" @click="back" />登录易点租
+        <van-icon name="arrow-left" class="left" @click="back" />注册易点租
       </h4>
 			<!--</div>-->
 			<van-form>

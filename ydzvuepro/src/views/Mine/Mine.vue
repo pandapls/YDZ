@@ -88,10 +88,13 @@
     			this.$router.push('/order')
     		},
     		tuichu(){
-    			console.log(JSON.parse(localStorage.getItem('username')))
+//  			console.log(JSON.parse(localStorage.getItem('username')))
     			localStorage.removeItem('username');
     			sessionStorage.removeItem('username');
     			this.$router.push('/home')
+    			this.$store.state.goodsData = []
+    			this.$store.state.goodsDatalist = []
+    			
     			
     		}
     		

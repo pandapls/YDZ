@@ -73,7 +73,8 @@ const routes = [{
 	{
 		path: '/login',
 		name: 'login',
-		component: Login
+		component: Login,
+		
 	},
 
 	{
@@ -117,7 +118,6 @@ const routes = [{
 const router = new VueRouter({
 	routes
 })
-//不能删
 router.beforeEach((to,from,next)=>{
 
 	if(to.meta.reqireAuth){

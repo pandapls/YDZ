@@ -97,7 +97,7 @@
 			},
 			btn(){
 				
-				console.log(this.username,this.Phone,this.selectProvices,this.selecCity,this.selecqu)
+//				console.log(this.username,this.Phone,this.selectProvices,this.selecCity,this.selecqu)
 				let address = {
 					username:this.username,
 					phone:this.Phone,

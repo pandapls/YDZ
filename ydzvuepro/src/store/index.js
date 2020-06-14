@@ -15,7 +15,8 @@ export default new Vuex.Store({
 		histroyPath:'',
 		goodsDatalist:[],
 		mapaddress:'',
-		order:[]
+		order:[],
+		jilu:false
 		
 	},
 	getters: {

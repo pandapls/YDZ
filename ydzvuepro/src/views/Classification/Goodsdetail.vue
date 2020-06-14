@@ -75,9 +75,6 @@
                   <div class="rent_detail">
                     <div class="rent-left fl">{{it.rentDesc[0]}}：</div>
                     <div class="rent-right">
-                      <!--{{it.perMonthList}}-->
-                      <!--<br /> {{it.perMonthList[1]}}-->
-                      <!--<br /> {{it.perMonthList[2]}}-->
                       <br />
                       {{it.rentDesc[1]}}
                     </div>
@@ -232,19 +229,21 @@
 				this.showsku =false
 			},
 			getGoods() {
-					this.goodsdata = {
-						title: this.title,
-						price: this.msg.minRentAmount,
-						yajin: this.msg.deposit,
-						imgSrc: this.msg.productPicInfos[0].filePath,
-						num: this.num,
-						Checkstate:true,
-						id:this.msg.id
+					if(this.$store.state.loginstatus){
+							this.goodsdata = {
+							title: this.title,
+							price: this.msg.minRentAmount,
+							yajin: this.msg.deposit,
+							imgSrc: this.msg.productPicInfos[0].filePath,
+							num: this.num,
+							Checkstate:true,
+							id:this.msg.id
+						}
+						this.$store.commit("setData", this.goodsdata);
+					}else{
+						this.$store.state.jilu = true
+						this.$router.push('/login')
 					}
-					this.$store.commit("setData", this.goodsdata);
-
-					
-					
 			},
 			showPopup1() {
 						this.showPopup = true;

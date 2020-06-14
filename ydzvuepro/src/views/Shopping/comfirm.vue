@@ -160,7 +160,7 @@
 
 			},
 			submit() {
-				console.log(this.$store.state.goodsData)
+//				console.log(this.$store.state.goodsData)
 				
 				if(this.$store.state.address.length==0){
 					this.$toast('地址未填写');

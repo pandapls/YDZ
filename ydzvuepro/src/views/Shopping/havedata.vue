@@ -150,7 +150,6 @@
 			back() {
 				console.log(this.$store.state.histroyPath)
 				this.$router.push('/goodsdetail')
-//				this.$router.go(-1)
 			},
 			formatDate(date) {
 				let data = new Date()
@@ -160,6 +159,7 @@
 				this.show = false;
 				this.date = this.formatDate(date);
 			},
+			//加减按钮
 			changeMoney: function (product, num) {
 					if (num > 0) {
 						product.num++;
@@ -172,18 +172,16 @@
 					// 每次修改商品数量之后，均重新计算商品总价
 					this.Allprice();
 			},
+			//计算总价
 			Allprice() {
 					this.allprice =0
 					this.goodsData.forEach((item,index)=>{
 						if(item.Checkstate){
 							this.allprice += (parseInt(item.yajin)+parseInt(item.price))*parseInt(item.num)
 						}
-					})
-					
-					
-
-				
+					})	
 			},
+			//删除商品
 			deleteCell(val, index) {
 				let deletindex =  this.$store.state.goodsData.indexOf(val)
 				this.$store.state.goodsData.splice(index,1)
